@@ -29,15 +29,26 @@
 
         <a class="home-button" href="index.html">tarandorland.com</a>
 
-        <a class="hd-button" href="assignment1.html">Assignments</a>
-        <a class="hd-button" href="assignment1.html">Projects</a>
-        <a class="hd-button" href="assignment1.html">placeholder</a>
-        <a class="hd-button" href="assignment1.html">placeholder</a>
+        <a class="hd-button" onmouseover="showHeaderDiv(), headerDivAssignments()" href="">COIS-2830 Assignments</a>
+        <a class="hd-button" onmouseover="showHeaderDiv(), headerDivProjects()"href="">Projects</a>
+        <a class="hd-button" href="">placeholder</a>
+        <a class="hd-button" href="">placeholder</a>
+
+
 
       </nav>
     </header>
 
-    <div class="page-container">
+    <div id="divDropdown" class="hd-dropdown-content">
+
+      <a id="dd-button-1" class="dd-button" href="assignment1.html">Assignment 1</a>
+      <a id="dd-button-2" class="dd-button" href="assignment1.html">Assignment 2</a>
+      <a id="dd-button-3" class="dd-button" href="assignment1.html">Assignment 3</a>
+      <a id="dd-button-4" class="dd-button" href="assignment1.html">Assignment 4</a>
+
+    </div>
+
+    <div class="page-container" onmouseover="hideHeaderDiv()">
       <div class="center-main-container">
 
         <h2>TEST</h2>
@@ -64,7 +75,7 @@
   <script src="js/bootstrap.min.js"></script>
 
   <!-- Custom JavaScript -->
-  <script src="js/"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
