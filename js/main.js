@@ -13,9 +13,9 @@ function headerDivAssignments() {
   document.getElementById('dd-button-2').innerHTML = "Assignment 2";
   document.getElementById('dd-button-2').href = "assignment2"
   document.getElementById('dd-button-3').innerHTML = "Assignment 3";
-  document.getElementById('dd-button-3').href = "assignment1"
+  document.getElementById('dd-button-3').href = "assignment3"
   document.getElementById('dd-button-4').innerHTML = "Assignment 4";
-  document.getElementById('dd-button-4').href = "assignment1"
+  document.getElementById('dd-button-4').href = "assignment4"
 }
 
 function headerDivProjects() {
