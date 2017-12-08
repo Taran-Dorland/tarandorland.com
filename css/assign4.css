@@ -221,3 +221,8 @@ ul, li {
   margin-right: 5px;
   font-family: "Roboto", sans-serif;
 }
+
+blockquote.imgur-embed-pub {
+  width: 1000px;
+  height: 600px;
+}
