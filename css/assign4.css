@@ -33,7 +33,7 @@ div.center-main-container {
 div.center-main-container-2 {
   position: relative;
   width: 1000px;
-  height: 434px;
+  height: 480px;
   z-index: 15;
   left: 35%;
   margin: 10px 0 0 -250px;
@@ -48,7 +48,7 @@ div.imgur-box {
   width: 540px;
   height: 480px;
   z-index: 15;
-  left: 20%;
+  left: 21%;
   background: White;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
