@@ -12,7 +12,7 @@ div.page-container {
 div.main-container {
   top: 0px;
   position: relative;
-  height: 2000px;
+  height: 1500px;
   z-index: 10;
   margin: 0px 0 0 0px;
 }
@@ -32,10 +32,10 @@ div.center-main-container {
 
 div.center-main-container-2 {
   position: relative;
-  width: 540px;
+  width: 1000px;
   height: 434px;
   z-index: 15;
-  left: 46.5%;
+  left: 35%;
   margin: 10px 0 0 -250px;
   background: White;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -46,7 +46,7 @@ div.center-main-container-2 {
 div.center-main-container-3{
   position: relative;
   width: 1000px;
-  height: 600px;
+  height: 450px;
   z-index: 15;
   left: 35%;
   margin: 10px 0 0 -250px;
