@@ -12,7 +12,7 @@ div.page-container {
 div.main-container {
   top: 0px;
   position: relative;
-  height: 2400px;
+  height: 900px;
   z-index: 10;
   margin: 0px 0 0 0px;
 }

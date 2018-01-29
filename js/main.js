@@ -19,8 +19,12 @@ function headerDivAssignments() {
 }
 
 function headerDivProjects() {
-  document.getElementById('dd-button-1').innerHTML = "Project 1";
-  document.getElementById('dd-button-2').innerHTML = "Project 2";
-  document.getElementById('dd-button-3').innerHTML = "Project 3";
-  document.getElementById('dd-button-4').innerHTML = "Project 4";
+  document.getElementById('dd-button-1').innerHTML = "This Site";
+  document.getElementById('dd-button-1').href = "https://github.com/Taran-Dorland/tarandorland.com"
+  document.getElementById('dd-button-2').innerHTML = "placeholder";
+  document.getElementById('dd-button-2').href = ""
+  document.getElementById('dd-button-3').innerHTML = "placeholder";
+  document.getElementById('dd-button-3').href = ""
+  document.getElementById('dd-button-4').innerHTML = "placeholder";
+  document.getElementById('dd-button-4').href = ""
 }
