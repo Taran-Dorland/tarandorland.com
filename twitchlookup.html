@@ -21,7 +21,7 @@
 
   <body>
 
-    <p>Enjoy this beautiful blank html page.</p>
+    <p>Enjoy this beautiful html page.</p>
     <p>
         This page allows you to look up any twitch user and retrieves information from
         the public twitch api and displays that information below:
@@ -30,19 +30,25 @@
     <a href="index.html">Return</a>
 
     <input id="in1" class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="callAPI()">Search</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="clearAPI(), callAPI()">Search</button>
 
-    <ul>
-        <li id="li1" style="margin-left: 23%">
-              id
-        </li>
-        <li id="li2" style="margin-left: 23%">
-              login
-        </li>
-         <li id="li3" style="margin-left: 23%">
-              display name
-        </li>
-    </ul>
+    <div style="margin-top: 50px">
+        <img id="img1" src="" height="250" width="250"></img>
+    </div>
+
+    <div>
+        <ul>
+            <li id="li1" style="margin-left: 23%">id</li>
+            <li id="li2" style="margin-left: 23%">login</li>
+            <li id="li3" style="margin-left: 23%">display name</li>
+        </ul>
+    </div>
+
+    <div>
+        <p>User most recent follows:</p>
+        <p id="p1"></p>
+
+    </div>
 
     <!-- ====================================== -->
 
