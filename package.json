@@ -23,9 +23,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-bare.git"
+    "url": "git+https://github.com/BlackrockDigital/startbootstrap-bare.git"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
     "popper.js": "^1.11.1"
@@ -33,5 +35,9 @@
   "devDependencies": {
     "browser-sync": "2.18.13",
     "gulp": "^3.9.1"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
