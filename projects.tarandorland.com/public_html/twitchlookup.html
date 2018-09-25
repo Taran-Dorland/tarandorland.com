@@ -15,39 +15,91 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/twitchlookup.css" rel="stylesheet">
   </head>
 
   <!-- ====================================== -->
 
   <body>
 
-    <p>Enjoy this beautiful html page.</p>
-    <p>
-        This page allows you to look up any twitch user and retrieves information from
-        the public twitch api and displays that information below:
-    </p>
+    <div class="wrapper-top">
+        <div class="main-container">
+            <div class="row-info">
 
-    <a href="https://projects.tarandorland.com">Return</a>
+                <h3><u>Twitch Lookup</u></h3>
 
-    <input id="in1" class="form-control mr-sm-2" placeholder="Example: lirik" aria-label="Search" type="text">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="clearAPI(), callAPI()">Search</button>
+                <p>
+                    This page allows you to look up any twitch user and retrieves information from
+                    the public twitch api and displays that information below:
+                </p>
 
-    <div style="margin-top: 50px">
-        <img id="img1" src="" height="250" width="250"></img>
-    </div>
+                <a class="btn-return" href="https://projects.tarandorland.com">Return to Project Directory</a>
 
-    <div>
-        <ul>
-            <li id="li1" style="margin-left: 23%">id</li>
-            <li id="li2" style="margin-left: 23%">login</li>
-            <li id="li3" style="margin-left: 23%">display name</li>
-        </ul>
-    </div>
+            </div>
+            <div class="row-search">
+                <div class="search-bar">
+                    <input id="in1" class="form-control mr-sm-2" placeholder="Example: lirik" aria-label="Search" type="text">
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="clearAPI(), callAPI()">Search</button>
+                </div>
+            </div>
 
-    <div>
-        <p>User most recent follows:</p>
-        <p id="p1"></p>
+            <div class="row-results-1">
+
+                <div class="user-picture">
+                        <img class="user-pic" id="img1" src="https://static-cdn.jtvnw.net/jtv_user_pictures/dallas-profile_image-1a2c906ee2c35f12-300x300.png"></img>
+                </div>
+
+                <h5 style="padding-top: 5px;">User's last =<100 follows:</h5>
+                <p id="p1"></p>
+
+            </div>
+
+            <div class="row-results-2">
+
+                <ul>
+                    <li id="li1" style="margin-left: 23%">id</li>
+                    <li id="li2" style="margin-left: 23%">login</li>
+                    <li style="margin-left: 23%">
+                        <a id="a1">display name</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="main-results-container">
+
+                <table id="data-table" class="table-hover">
+                    <colgroup>
+                        <col style="width: 175px;">
+                        <col style="width: 65px;">
+                        <col style="width: 125px;">
+                        <col style="width: 150px;">
+                        <col style="width: 175px;">
+                        <col style="width: 150px;">
+                        <col style="width: 150px;">
+                        <col style="width: 150px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Profile Picture</th>
+                            <th>Num</th>
+                            <th>User ID</th>
+                            <th>Display Name</th>
+                            <th>Date Followed</th>
+                            <th>Caster Type</th>
+                            <th>View Count</th>
+                            <th>Other</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body-data">
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
 
     </div>
 

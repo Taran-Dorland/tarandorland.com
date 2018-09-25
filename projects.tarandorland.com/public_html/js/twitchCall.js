@@ -13,6 +13,7 @@
 //https://dev.twitch.tv/docs/api/reference/#get-users
 //https://dev.twitch.tv/docs/authentication/#getting-tokens
 //https://dev.twitch.tv/docs/api/guide/
+//https://steamdb.info/
 
 //==---------------------------------------------------------------------------------------------==
 //Makes multiple calls to twitch api to retrieve info and displays it on the page
@@ -41,15 +42,16 @@ function callAPI() {
 
     //console.log(array.data[1]);
 
-    //Update HTML with info
+    //Update HTML with info of input user
     document.getElementById("li1").innerHTML = array.data[0].id;
     document.getElementById("li2").innerHTML = array.data[0].login;
-    document.getElementById("li3").innerHTML = array.data[0].display_name;
+    document.getElementById("a1").innerHTML = array.data[0].display_name;
+    document.getElementById("a1").setAttribute('href', "https://twitch.tv/" + array.data[0].display_name);
     document.getElementById('img1').src = array.data[0].profile_image_url;
 
     //==---------------------------------------------------------------------------------------------==
-    //Calling API for followers
-    var requestFollows = "https://api.twitch.tv/helix/users/follows?from_id=" + array.data[0].id;
+    //Calling API for the input user's follows
+    var requestFollows = "https://api.twitch.tv/helix/users/follows?first=100&from_id=" + array.data[0].id;
     var requestFol = new XMLHttpRequest();
 
     requestFol.open("GET", requestFollows, true);
@@ -66,6 +68,7 @@ function callAPI() {
       var addOne = "&id=";
 
       //Add all the ID's here so we can convert them
+      //So we don't have to make multiple API calls
       for (let i = 0; i < arrayFollows.data.length; i++) {
 
         if (i != 0) {
@@ -78,6 +81,7 @@ function callAPI() {
       console.log("REQUEST: " + requestFolConvert);
 
       //==---------------------------------------------------------------------------------------------==
+      //Converting followed users ID's to Display names so people can actually see who it is
       //Convert ID to display name lul twitch makes this complicated
     
       var requestIDToName = new XMLHttpRequest();
@@ -92,8 +96,35 @@ function callAPI() {
         console.log(followerNameArray);
 
         for (let i = 0; i < followerNameArray.data.length; i++) {
+          
+          //Adding table rows and cells
+          var table = document.getElementById("data-table").getElementsByTagName('tbody')[0];
+          var row = table.insertRow(i);
 
-          document.getElementById("p1").innerHTML = document.getElementById("p1").innerHTML + " " + i + ". " + followerNameArray.data[i].display_name;
+          //Insert new cells into each position
+          //Insert USER ID into the correct column
+          for (let j = 0; j < 8; j++) {
+            var cell = row.insertCell(j);
+            if (j == 1) {
+              cell.innerHTML = i;
+            } else if (j == 2) {
+              cell.innerHTML = arrayFollows.data[i].to_id;
+            } else if (j == 3) {
+              var link = "https://twitch.tv/" + followerNameArray.data[i].display_name;
+              var a = document.createElement('a');
+              a.setAttribute('href', link);
+              a.innerHTML = followerNameArray.data[i].display_name;
+              cell.appendChild(a);
+            } else if (j == 4) {
+              cell.innerHTML = arrayFollows.data[i].followed_at;
+            } else if (j == 5) {
+              cell.innerHTML = followerNameArray.data[i].type;
+            } else if (j == 6) {
+              cell.innerHTML = followerNameArray.data[i].view_count;
+            } else if (j == 7) {
+              cell.innerHTML = "PlaceHolder";
+            }
+          }
         }
       };
       requestIDToName.send();
@@ -104,7 +135,10 @@ function callAPI() {
 }
 
 //==---------------------------------------------------------------------------------------------==
-//Clears info on the page so it doesnt stack with outdated info
+//Clears data on the page so it doesnt stack with new data
 function clearAPI() {
-  document.getElementById("p1").innerHTML = "";
+  var new_tbody = document.createElement('tbody');
+  var old_tbody = document.getElementById("data-table").getElementsByTagName('tbody')[0];
+
+  old_tbody.parentNode.replaceChild(new_tbody, old_tbody);
 }
