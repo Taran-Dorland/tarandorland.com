@@ -8,3 +8,5 @@ ErrorDocument 503 /maintenance.html
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
+
+ErrorDocument 404 /notfound.html
