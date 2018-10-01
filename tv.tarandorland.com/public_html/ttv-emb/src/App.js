@@ -11,15 +11,28 @@ class App extends Component {
         </header>
         <body className="App-body">
           <div className="player-main">
+
+            <div className="player-embed" id="twitch-embed">{this.loadPlayer()}</div>
+            
             
           </div>
           <div className="chat-main">
-          
+            <div className="chat-tabs">
+              <p>Chat Tabs Here</p>
+            </div>
+            <p>Chat Here</p>
           </div>
         </body>
       </div>
     );
   }
+
+  loadPlayer() {
+
+    
+
+  }
+
 }
 
 export default App;
