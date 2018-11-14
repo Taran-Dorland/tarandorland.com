@@ -70,24 +70,22 @@ $database = "3400_project";
 $sql = "INSERT INTO test_table_1(firstName, lastName, age) VALUES(?,?,?);";
 
 //Connect to DB
-$conn = mysqli_connect($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $database);
 
-//Prepare statement
-if (!($stmt = $conn -> prepare($sql))) {
-    echo "Prepare failed: (" . $conn -> errno . ") " . $conn -> error;
+//Check connection
+if ($conn -> connect_error) {
+    die("Connection failed: " . $conn -> connect_error);
 }
 
-//Bind statement
-$id = 1;
-if (!$stmt -> bind_param("i", $id)) {
-    echo "Binding parameters failed: (" . $stmt -> errno . ") " . $stmt -> error;
-}
+//Prepare and Bind
+$stmt = $conn -> prepare($sql);
+$stmt -> bind_param("sss", $_POST['firstname'], $_POST['lastname'], $_POST['age']);
 
-//Execute statement
-if (!$stmt -> execute()) {
-    echo "Execute failed: (" . $stmt -> errno . ") " . $stmt -> error;
-}
+//Execute
+$stmt -> execute();
 
-
+//Close connections
+$stmt -> close();
+$conn -> close();
 
 ?>
