@@ -62,6 +62,10 @@
 
 <?php
 
+//Sources + Info
+//https://www.w3schools.com/php/php_mysql_prepared_statements.asp
+//http://php.net/manual/en/mysqli.quickstart.prepared-statements.php
+
 //Values used to connect to DB
 $servername = "localhost";
 $username = "tarandb";
