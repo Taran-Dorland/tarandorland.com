@@ -37,7 +37,7 @@
 
         <div class="div-form">
 
-            <form action="index.php" method="post">
+            <form action="3400project.php" method="post">
 			
 			
             Firstname: <input type="text" name="firstname">	<br> <br>
@@ -62,17 +62,13 @@
 
 <?php
 
-//Values from html input form
-$firstName = @$_POST['firstname'];
-$lastName = @$_POST['lastname'];
-$age = @$_POST['age'];
-
 //Values used to connect to DB
 $servername = "localhost";
 $username = "tarandb";
 $password = "dblogin13542";
 $database = "3400_project";
-$sql = "INSERT INTO test_table_1(firstName, lastName, age) VALUES($firstName, $lastName, $age);";
+$sql = "INSERT INTO test_table_1(firstName, lastName, age) VALUES(?,?,?);";
+$stmt = mysqli_prepare($sql);
 
 //Connect to database
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -85,7 +81,8 @@ if (mysqli_connect_errno($conn)) {
 }
 
 //Execute database query
-mysqli_query($conn, $sql);
+$stmt -> bind_param("sss", $_POST['firstname'], $_POST['lastname'], $_POST['age']);
+$stmt -> execute();
 
 //Check if it is successful
 if (mysqli_query($conn, $sql)) {
