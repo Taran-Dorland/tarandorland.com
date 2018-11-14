@@ -4,6 +4,16 @@ div.main-div {
 }
 
 div.div-pasta {
-    width: 300px;
+    float: left;
+    width: 450px;
     height: 200px;
+}
+
+div.div-form {
+    float: left;
+
+}
+
+div.div-bottom {
+    margin: 10%;
 }
