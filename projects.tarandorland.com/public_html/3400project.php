@@ -63,7 +63,7 @@
 <?php
 
 //Values used to connect to DB
-$servername = "10.132.109.62";
+$servername = "localhost";
 $username = "tarandb";
 $password = "dblogin13542";
 $database = "3400_project";
