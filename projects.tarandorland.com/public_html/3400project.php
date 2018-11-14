@@ -63,35 +63,31 @@
 <?php
 
 //Values used to connect to DB
-$servername = "localhost";
+$servername = "tarandorland.com";
 $username = "tarandb";
 $password = "dblogin13542";
 $database = "3400_project";
 $sql = "INSERT INTO test_table_1(firstName, lastName, age) VALUES(?,?,?);";
-$stmt = mysqli_prepare($sql);
 
-//Connect to database
+//Connect to DB
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-//Check connection
-if (mysqli_connect_errno($conn)) {
-    echo "Failed to connect to MySQL: ".mysqli_connect_error();
-} else {
-    echo "Succesfully connected to MySQL";
+//Prepare statement
+if (!($stmt = $conn -> prepare($sql))) {
+    echo "Prepare failed: (" . $conn -> errno . ") " . $conn -> error;
 }
 
-//Execute database query
-$stmt -> bind_param("sss", $_POST['firstname'], $_POST['lastname'], $_POST['age']);
-$stmt -> execute();
-
-//Check if it is successful
-if (mysqli_query($conn, $sql)) {
-    echo "Data submitted successfully";
-} else {
-    echo "Error submitting data: " . mysqli_error();
+//Bind statement
+$id = 1;
+if (!$stmt -> bind_param("i", $id)) {
+    echo "Binding parameters failed: (" . $stmt -> errno . ") " . $stmt -> error;
 }
 
-//Close database connection
-mysqli_close($conn);
+//Execute statement
+if (!$stmt -> execute()) {
+    echo "Execute failed: (" . $stmt -> errno . ") " . $stmt -> error;
+}
+
+
 
 ?>
