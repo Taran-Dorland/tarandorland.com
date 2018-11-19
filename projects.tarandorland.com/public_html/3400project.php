@@ -44,7 +44,7 @@
             Lastname: <input type="text" name="lastname">	<br> <br>
             Age: <input type="number" name="age" min="13" max="100" id="age"> <br> <br>
 
-            <input type="submit">	
+            <input type="submit" name='submit'>	
 
             </center>
 
@@ -81,15 +81,20 @@ if ($conn -> connect_error) {
     die("Connection failed: " . $conn -> connect_error);
 }
 
-//Prepare and Bind
-$stmt = $conn -> prepare($sql);
-$stmt -> bind_param("sss", $_POST['firstname'], $_POST['lastname'], $_POST['age']);
+if (isset($_POST['submit'])) {
 
-//Execute
-$stmt -> execute();
+    //Prepare and Bind
+    $stmt = $conn -> prepare($sql);
+    $stmt -> bind_param("sss", $_POST['firstname'], $_POST['lastname'], $_POST['age']);
 
-//Close connections
-$stmt -> close();
-$conn -> close();
+    //Execute
+    $stmt -> execute();
+
+    //Close connections
+    $stmt -> close();
+    $conn -> close();
+
+    header("location: 3400project.php");
+}
 
 ?>
