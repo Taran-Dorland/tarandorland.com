@@ -1,10 +1,19 @@
-
-
-body {
-  padding-top: 5rem;
+div.main-div {
+  left: 10%;
+  top: 10%;
 }
 
-div.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+div.div-pasta {
+  float: left;
+  width: 450px;
+  height: 200px;
+}
+
+div.div-form {
+  float: left;
+
+}
+
+div.div-bottom {
+  margin: 10%;
 }

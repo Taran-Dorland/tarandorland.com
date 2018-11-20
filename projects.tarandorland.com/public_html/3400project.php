@@ -10,8 +10,11 @@
 
     <title>COIS-3400 Project</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- CSS -->
-    <link href="css/3400project.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     
 </head>
 
