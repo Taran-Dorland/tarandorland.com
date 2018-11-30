@@ -43,9 +43,12 @@
             <form action="3400project.php" method="post">
 			
 			
+            CustomerID: <input type="number" name="customerId" min="0"> <br> <br>
             Firstname: <input type="text" name="firstname">	<br> <br>
             Lastname: <input type="text" name="lastname">	<br> <br>
-            Age: <input type="number" name="age" min="13" max="100" id="age"> <br> <br>
+            Date of Birth: <input type="date" name="age" id="age"> <br> <br>
+            Email: <input type="text" name="email"> <br> <br>
+            Phone Number: <input type="text" name="phoneNum"> <br> <br>
 
             <input type="submit" name='submit'>	
 
@@ -58,6 +61,10 @@
 
     <div class="div-bottom">
         <a href="index.html">Return</a>
+    </div>
+
+    <div style="Padding-left: 23.5%;">
+        <button action="3400project.php" type="button" name="saveBtn">Save Data</button>
     </div>
 
 </body>
@@ -74,7 +81,7 @@ $servername = "localhost";
 $username = "tarandb";
 $password = "dblogin13542";
 $database = "3400_project";
-$sql = "INSERT INTO test_table_1(firstName, lastName, age) VALUES(?,?,?);";
+$sql = "INSERT INTO customer(CustomerID, FirstName, LastName, DateOfBirth, Email, PhoneNumber) VALUES(?,?,?,?,?,?);";
 
 //Connect to DB
 $conn = new mysqli($servername, $username, $password, $database);
@@ -84,11 +91,19 @@ if ($conn -> connect_error) {
     die("Connection failed: " . $conn -> connect_error);
 }
 
+if (lisset($_POST['saveBtn'])) {
+
+    $sql = "SELECT * FROM customer;";
+
+
+
+}
+
 if (isset($_POST['submit'])) {
 
     //Prepare and Bind
     $stmt = $conn -> prepare($sql);
-    $stmt -> bind_param("sss", $_POST['firstname'], $_POST['lastname'], $_POST['age']);
+    $stmt -> bind_param("isssss", $_POST['customerId'], $_POST['firstname'], $_POST['lastname'], $_POST['age'], $_POST['email'], $_POST['phoneNum']);
 
     //Execute
     $stmt -> execute();
