@@ -75,6 +75,7 @@
 //Sources + Info
 //https://www.w3schools.com/php/php_mysql_prepared_statements.asp
 //http://php.net/manual/en/mysqli.quickstart.prepared-statements.php
+//https://stackoverflow.com/questions/35220022/mysqli-export-table-to-csv
 
 //Values used to connect to DB
 $servername = "localhost";
@@ -91,14 +92,38 @@ if ($conn -> connect_error) {
     die("Connection failed: " . $conn -> connect_error);
 }
 
+//Saves data from table to .csv
 if (lisset($_POST['saveBtn'])) {
 
     $sql = "SELECT * FROM customer;";
 
+    $result = $conn -> query($sql);
 
+    $f = fopen('php://temp', 'wt');
+    $first = true;
 
+    while ($row = $result -> fetch_assoc()) {
+        if ($first) {
+            fputcsv($f, array_keys($row));
+            $first = false;
+        }
+        fputcsv($f, $row);
+    }
+
+    $size = ftell($f);
+    rewind($f);
+
+    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+    header("Content-Length: $size");
+    // Output to browser with appropriate mime type, you choose ;)
+    header("Content-type: text/x-csv");
+    header("Content-type: text/csv");
+    header("Content-type: application/csv");
+    header("Content-Disposition: attachment; filename=$filename");
+    fpassthru($f);
 }
 
+//Uses prepared statements to insert data into table
 if (isset($_POST['submit'])) {
 
     //Prepare and Bind
@@ -114,5 +139,7 @@ if (isset($_POST['submit'])) {
 
     header("location: 3400project.php");
 }
+
+$conn -> close();
 
 ?>
