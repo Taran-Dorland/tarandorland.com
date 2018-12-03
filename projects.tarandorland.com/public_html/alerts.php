@@ -43,11 +43,11 @@ if (isset($_POST['submit'])) {
 
 function warframeScrape() {
 
-    $url = "http://content.warframe.com/dynamic/worldState.php";
+    
+    $json = file_get_contents("https://api.warframestat.us/pc");
+    $obj = json_decode($json);
 
-    $result = file_get_contents($url);
+    echo $obj;
 
-    // Encode to JSON Object
-    echo json_encode($result);
 }
 ?>
