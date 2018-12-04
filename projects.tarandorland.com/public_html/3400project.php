@@ -92,7 +92,7 @@ if ($conn -> connect_error) {
     die("Connection failed: " . $conn -> connect_error);
 }
 
-//Saves data from table to .csv
+//Saves data from table to .csv file
 if (lisset($_POST['export'])) {
 
     $sql = "SELECT * FROM customer ORDER BY CustomerID DESC;";
@@ -110,20 +110,18 @@ if (lisset($_POST['export'])) {
     {  
         fputcsv($output, $row);  
     }
-
-    echo $result;
-
+    
     fclose($output);
 }
 
 //Uses prepared statements to insert data into table
 if (isset($_POST['submit'])) {
 
-    $sql = "INSERT INTO customer(CustomerID, FirstName, LastName, Email, PhoneNumber) VALUES(?,?,?,?,?);";
+    $sql = "INSERT INTO customer(CustomerID, FirstName, LastName, DateOfBirth, Email, PhoneNumber) VALUES(?,?,?,?,?,?);";
 
     //Prepare and Bind
     $stmt = $conn -> prepare($sql);
-    $stmt -> bind_param("sssss", $_POST['customerId'], $_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phoneNum']);
+    $stmt -> bind_param("ssssss", $_POST['customerId'], $_POST['firstname'], $_POST['lastname'], $_POST['age'], $_POST['email'], $_POST['phoneNum']);
 
     //Execute
     $stmt -> execute();
