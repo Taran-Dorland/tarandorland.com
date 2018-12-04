@@ -97,21 +97,17 @@ if (lisset($_POST['export'])) {
 
     $sql = "SELECT * FROM customer ORDER BY CustomerID DESC;";
 
-    header('Content-Type: text/csv; charset=utf-8');  
-    header('Content-Disposition: attachment; filename=data.csv');  
+    $filename = "backup";
+    $mime = "application/x-gzip";
 
-    $output = fopen("php://output", "w");
+    header("Content-Type: " . $mime);
+    header('Content-Disposition: attachment; filename="' . $filename . '"');
 
-    fputcsv($output, array('Customer ID', 'First Name', 'Last Name', 'Date of Birth', 'Email', 'Phone Number'));
-
-    $result = mysqli_query($conn, $sql);
-
-    while($row = mysqli_fetch_assoc($result))
-    {  
-        fputcsv($output, $row);  
-    }
+    $cmd = "mysqldump -u $username --password=$password $database | gzip --best";
     
-    fclose($output);
+    passthru($cmd);
+
+    exit(0);
 }
 
 //Uses prepared statements to insert data into table
