@@ -50,7 +50,7 @@
             Email: <input type="text" name="email"> <br> <br>
             Phone Number: <input type="text" name="phoneNum"> <br> <br>
 
-            <input type="test" name='submit'>
+            <input type="submit" name='submit'>	
 
             </center>
 
@@ -64,9 +64,7 @@
     </div>
 
     <div style="Padding-left: 23.5%;">
-        <form action="3400project.php" method="post">
-            <input type="submit" name="export"> <br>
-        </form>
+        <button action="3400project.php" method="post" type="button" name="export">Save Data</button>
     </div>
 
 </body>
@@ -78,6 +76,7 @@
 //https://www.w3schools.com/php/php_mysql_prepared_statements.asp
 //http://php.net/manual/en/mysqli.quickstart.prepared-statements.php
 //https://stackoverflow.com/questions/35220022/mysqli-export-table-to-csv
+//https://stackoverflow.com/questions/6750531/using-a-php-file-to-generate-a-mysql-dump
 
 //Values used to connect to DB
 $servername = "localhost";
@@ -95,9 +94,7 @@ if ($conn -> connect_error) {
 }
 
 //Saves data from table to .csv file
-if (lisset($_POST['submit'])) {
-
-    $sql = "SELECT * FROM customer ORDER BY CustomerID DESC;";
+if (lisset($_POST['export'])) {
 
     $filename = "backup";
     $mime = "application/x-gzip";
@@ -113,7 +110,7 @@ if (lisset($_POST['submit'])) {
 }
 
 //Uses prepared statements to insert data into table
-if (isset($_POST['export'])) {
+if (isset($_POST['submit'])) {
 
     $sql = "INSERT INTO customer(CustomerID, FirstName, LastName, DateOfBirth, Email, PhoneNumber) VALUES(?,?,?,?,?,?);";
 
