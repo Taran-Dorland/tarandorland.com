@@ -64,7 +64,7 @@
     </div>
 
     <div style="Padding-left: 23.5%;">
-        <button action="3400project.php" type="button" name="saveBtn">Save Data</button>
+        <button action="3400project.php" method="post" type="button" name="export">Save Data</button>
     </div>
 
 </body>
@@ -92,7 +92,7 @@ if ($conn -> connect_error) {
 }
 
 //Saves data from table to .csv
-if (lisset($_POST['saveBtn'])) {
+if (lisset($_POST['export'])) {
     saveTableData($conn);
 }
 
@@ -121,6 +121,8 @@ function saveTableData($conn) {
         fputcsv($output, $row);  
     }
 
+    echo $result;
+
     fclose($output);
 }
 
@@ -130,7 +132,7 @@ function insertTableData($conn) {
 
     //Prepare and Bind
     $stmt = $conn -> prepare($sql);
-    $stmt -> bind_param("isssss", $_POST['customerId'], $_POST['firstname'], $_POST['lastname'], $_POST['age'], $_POST['email'], $_POST['phoneNum']);
+    $stmt -> bind_param("ssssss", $_POST['customerId'], $_POST['firstname'], $_POST['lastname'], $_POST['age'], $_POST['email'], $_POST['phoneNum']);
 
     //Execute
     $stmt -> execute();
