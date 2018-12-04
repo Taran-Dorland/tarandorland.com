@@ -82,7 +82,6 @@ $servername = "localhost";
 $username = "tarandb";
 $password = "dblogin13542";
 $database = "3400_project";
-$sql = "INSERT INTO customer(CustomerID, FirstName, LastName, DateOfBirth, Email, PhoneNumber) VALUES(?,?,?,?,?,?);";
 
 //Connect to DB
 $conn = new mysqli($servername, $username, $password, $database);
@@ -94,37 +93,40 @@ if ($conn -> connect_error) {
 
 //Saves data from table to .csv
 if (lisset($_POST['saveBtn'])) {
-
-    $sql = "SELECT * FROM customer;";
-
-    $result = $conn -> query($sql);
-
-    $f = fopen('php://temp', 'wt');
-    $first = true;
-
-    while ($row = $result -> fetch_assoc()) {
-        if ($first) {
-            fputcsv($f, array_keys($row));
-            $first = false;
-        }
-        fputcsv($f, $row);
-    }
-
-    $size = ftell($f);
-    rewind($f);
-
-    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-    header("Content-Length: $size");
-    // Output to browser with appropriate mime type, you choose ;)
-    header("Content-type: text/x-csv");
-    header("Content-type: text/csv");
-    header("Content-type: application/csv");
-    header("Content-Disposition: attachment; filename=$filename");
-    fpassthru($f);
+    saveTableData($conn);
 }
 
 //Uses prepared statements to insert data into table
 if (isset($_POST['submit'])) {
+    insertTableData($conn);
+}
+
+$conn -> close();
+
+function saveTableData($conn) {
+
+    $sql = "SELECT * FROM customer ORDER BY CustomerID DESC;";
+
+    header('Content-Type: text/csv; charset=utf-8');  
+    header('Content-Disposition: attachment; filename=data.csv');  
+
+    $output = fopen("php://output", "w");
+
+    fputcsv($output, array('Customer ID', 'First Name', 'Last Name', 'Date of Birth', 'Email', 'Phone Number'));
+
+    $result = mysqli_query($conn, $sql);
+
+    while($row = mysqli_fetch_assoc($result))
+    {  
+        fputcsv($output, $row);  
+    }
+
+    fclose($output);
+}
+
+function insertTableData($conn) {
+
+    $sql = "INSERT INTO customer(CustomerID, FirstName, LastName, DateOfBirth, Email, PhoneNumber) VALUES(?,?,?,?,?,?);";
 
     //Prepare and Bind
     $stmt = $conn -> prepare($sql);
@@ -139,7 +141,5 @@ if (isset($_POST['submit'])) {
 
     header("location: 3400project.php");
 }
-
-$conn -> close();
 
 ?>
