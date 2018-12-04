@@ -82,6 +82,7 @@ $servername = "localhost";
 $username = "tarandb";
 $password = "dblogin13542";
 $database = "3400_project";
+$sql = "";
 
 //Connect to DB
 $conn = new mysqli($servername, $username, $password, $database);
@@ -93,17 +94,6 @@ if ($conn -> connect_error) {
 
 //Saves data from table to .csv
 if (lisset($_POST['export'])) {
-    saveTableData($conn);
-}
-
-//Uses prepared statements to insert data into table
-if (isset($_POST['submit'])) {
-    insertTableData($conn);
-}
-
-$conn -> close();
-
-function saveTableData($conn) {
 
     $sql = "SELECT * FROM customer ORDER BY CustomerID DESC;";
 
@@ -126,13 +116,14 @@ function saveTableData($conn) {
     fclose($output);
 }
 
-function insertTableData($conn) {
+//Uses prepared statements to insert data into table
+if (isset($_POST['submit'])) {
 
-    $sql = "INSERT INTO customer(CustomerID, FirstName, LastName, DateOfBirth, Email, PhoneNumber) VALUES(?,?,?,?,?,?);";
+    $sql = "INSERT INTO customer(CustomerID, FirstName, LastName, Email, PhoneNumber) VALUES(?,?,?,?,?);";
 
     //Prepare and Bind
     $stmt = $conn -> prepare($sql);
-    $stmt -> bind_param("ssssss", $_POST['customerId'], $_POST['firstname'], $_POST['lastname'], $_POST['age'], $_POST['email'], $_POST['phoneNum']);
+    $stmt -> bind_param("sssss", $_POST['customerId'], $_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phoneNum']);
 
     //Execute
     $stmt -> execute();
@@ -143,5 +134,7 @@ function insertTableData($conn) {
 
     header("location: 3400project.php");
 }
+
+$conn -> close();
 
 ?>
