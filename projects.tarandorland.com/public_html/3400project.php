@@ -95,7 +95,7 @@ if ($conn -> connect_error) {
 }
 
 //Saves data from table to .csv file
-if (lisset($_POST['export'])) {
+if (lisset($_POST['submit'])) {
 
     $sql = "SELECT * FROM customer ORDER BY CustomerID DESC;";
 
@@ -113,7 +113,7 @@ if (lisset($_POST['export'])) {
 }
 
 //Uses prepared statements to insert data into table
-if (isset($_POST['submit'])) {
+if (isset($_POST['export'])) {
 
     $sql = "INSERT INTO customer(CustomerID, FirstName, LastName, DateOfBirth, Email, PhoneNumber) VALUES(?,?,?,?,?,?);";
 
