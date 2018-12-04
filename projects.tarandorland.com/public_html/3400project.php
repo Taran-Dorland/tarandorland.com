@@ -50,7 +50,7 @@
             Email: <input type="text" name="email"> <br> <br>
             Phone Number: <input type="text" name="phoneNum"> <br> <br>
 
-            <input type="submit" name='submit'>	
+            <input type="test" name='submit'>
 
             </center>
 
@@ -64,7 +64,9 @@
     </div>
 
     <div style="Padding-left: 23.5%;">
-        <button action="3400project.php" method="post" type="button" name="export">Save Data</button>
+        <form action="3400project.php" method="post">
+            <input type="submit" name="export"> <br>
+        </form>
     </div>
 
 </body>
