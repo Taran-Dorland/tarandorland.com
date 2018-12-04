@@ -63,10 +63,6 @@
         <a href="index.html">Return</a>
     </div>
 
-    <div style="Padding-left: 23.5%;">
-        <button action="3400project.php" method="post" type="button" name="export">Save Data</button>
-    </div>
-
 </body>
 </html>
 
@@ -91,22 +87,6 @@ $conn = new mysqli($servername, $username, $password, $database);
 //Check connection
 if ($conn -> connect_error) {
     die("Connection failed: " . $conn -> connect_error);
-}
-
-//Saves data from table to .csv file
-if (lisset($_POST['export'])) {
-
-    $filename = "backup";
-    $mime = "application/x-gzip";
-
-    header("Content-Type: " . $mime);
-    header('Content-Disposition: attachment; filename="' . $filename . '"');
-
-    $cmd = "mysqldump -u $username --password=$password $database | gzip --best";
-    
-    passthru($cmd);
-
-    exit(0);
 }
 
 //Uses prepared statements to insert data into table
