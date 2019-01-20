@@ -79,10 +79,11 @@
 
             //echo $inStr;
             //echo $curStr;
+            echo strcmp($curStr, $inStr);
 
             if ($curStr == $inStr) {
                 //Strings match
-                echo $curStr;
+                //echo $curStr;
             }
         }
 
