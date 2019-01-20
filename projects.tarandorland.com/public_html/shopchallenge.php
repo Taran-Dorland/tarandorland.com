@@ -66,6 +66,7 @@
         }
     }
     
+    test($list);
 
     //Grab user input, send to search function
     if (isset($_POST['submit'])) {
@@ -75,16 +76,21 @@
         search($list, $inStr, $obj);
     }
 
-    function search(&$list, $inStr) {
+    function test($abc) {
+        
+    }
+
+    function search($list, $inStr) {
 
         $resultObjRef;
 
-        for ($list -> rewind(); $list -> valid(); $list -> next()) {
+        for ($list -> rewind(); $list -> current != null; $list -> next()) {
 
             if ($list -> current()[0] == $inStr) {
                 //Strings match
                 $resultObjRef = $resultObjRef . $list -> current()[1] . ",";
             }
+            echo $resultObjRef;
         }
 
         echo $resultObjRef;
@@ -96,6 +102,7 @@
             echo $resultRefs[$x];
         }
 
+        return;
         //outputResults($resultRefs);
     }
 
