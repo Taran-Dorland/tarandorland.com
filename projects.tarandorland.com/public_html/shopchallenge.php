@@ -35,10 +35,10 @@
             </div>
             <div class="row-search">
                 <div class="search-bar">
-                    <input id="in1" class="form-control mr-sm-2" placeholder="Example: takeout" aria-label="Search" type="text">
+                    <input id="in1" class="form-control mr-sm-2" placeholder="Example: takeout" aria-label="Search" type="text" name="searchTxt" required>
                 </div>
                 <div class="btn-container">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit" onclick="">Search</button>
+                    <input class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit" onclick="" value="Search"></button>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
 
     
 
-    outputResults($list);
+    //outputResults($list);
 
     ?>
 
@@ -89,6 +89,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
 
 </body>
 </html>
