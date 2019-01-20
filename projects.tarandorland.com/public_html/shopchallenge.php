@@ -79,8 +79,14 @@
 
             if ($curStr == $inStr) {
                 //Strings match
-                echo $curStr;
+                $resultObjRef = $resultObjRef . $list -> current()[1] . ",";
             }
+
+            if ($list -> current()[0] == $inStr) {
+                //Strings match
+                $resultObjRef = $resultObjRef . $list -> current()[1] . ",";
+            }
+            echo $resultObjRef;
         }
 
         echo $resultObjRef;
@@ -92,9 +98,7 @@
             echo $resultRefs[$x];
         }
 
-        //outputResults($resultRefs);
-
-
+        outputResults($resultRefs);
     }
 
     ?>
