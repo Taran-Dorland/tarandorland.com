@@ -83,7 +83,7 @@
 
             if ($list -> current()[0] == $inStr) {
                 //Strings match
-                $resultObjRef = $resultObjRef . $list -> current()[1] . ',';
+                $resultObjRef = $resultObjRef . $list -> current()[1] . ",";
             }
         }
 
