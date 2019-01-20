@@ -46,133 +46,86 @@
 
     <?php
 
-    //Data Structure
-    //INFO:
-    //https://rosettacode.org/wiki/AVL_tree#Java
-    //https://stackoverflow.com/questions/14288534/php-compare-alphabet-position
-    //https://en.wikipedia.org/wiki/AVL_tree
-    //https://stackoverflow.com/questions/15538479/search-for-multiple-keywords-with-php-and-mysql-where-x-like
-    //https://stackoverflow.com/questions/10758897/parsing-json-array-with-php-foreach
-    //https://stackoverflow.com/questions/29308898/how-do-i-extract-data-from-json-with-php
-    class AVL {
+    $json = file_get_contents("https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000");
+    $obj = json_decode($json);
 
-        private $root;
+    $LL = new LinkedList();
+
+    //Add all the keywords and their associated object reference to the linked list
+    for ($x = 0; $x < count($obj); $x++) {
+
+        $keywords = explode(",", $obj[$x] -> keywords);
+
+        for ($i = 0; $i < count($keywords); $i++) {
+
+            $LL -> addLast($keywords[$i], $x);
+        }
+    }
+
+    class LinkedList {
+
+        private $head;
+        private $tail;
 
         public function _construct() {
-            
+            $head = null;
+            $tail = null;
         }
 
+        public function addLast($data, $numVal) {
 
-        public function insert($val) {
+            if ($head == null) {
 
-            if ($root == null) {
-                $root = new Node($val, null);
-                return true;
-            }
+                $head = new Node();
+                $head -> data = $data;
+                $head -> numVal = $numVal;
+                $head -> next = null;
 
-            $n = $root;
-            while (true) {
-                if ($n -> val == $val) {
-                    return false;
-                }
-
-                $parNode = $n;
-
-                //EDIT THIS WITH STRING CHECK
-                $goLeft = $n -> val > $val;
-
-                $n = $goLeft ? $n -> left : $n -> right;
-
-                if ($n == null) {
-                    if ($goLeft) {
-                        $parNode -> left = new Node($val, $parNode);
-                    } else {
-                        $parNode -> right = new Node($val, $parNode);
-                    }
-                    rebalance($parNode);
-                    break;
-                }
-
-            }
-            return true;
-        }
-
-        private function rebalance(Node $n) {
-
-            setBalance1($n);
-
-            if ($n -> balance == -2) {
-                if (height($n -> left -> left) >= height($n -> left -> right)) {
-                    $n = rotateRight($n);
-                } else {
-                    $n = rotateLeftThenRight($n);
-                }
-            } else if ($n -> balance == 2) {
-                if (height($n -> right -> right) >= height($n -> right -> left)) {
-                    $n = rotateLeft($n);
-                } else {
-                    $n = rotateRightThenLeft($n);
-                }
-            }
-
-            if ($n -> parentNode != null) {
-                rebalance($n -> parentNode);
+                $tail = $head;
             } else {
-                $root = $n;
+
+                $toAdd = new Node();
+                $toAdd -> data = $data;
+                $toAdd -> numVal = $numVal;
+
+                $current = $head;
+                while ($current -> next != null) {
+                    $current = $current -> next;
+                }
+
+                $current -> next = $toAdd;
+                $tail = $toAdd;
             }
         }
 
-        private function rotateLeft(Node $a) {
+        public function output() {
 
+            $curNode = $head;
+            while ($curNode != null) : ?>
+
+                <div class="results">
+                    <?=$curNode -> numVal?>
+                    <?=$curNode -> data?>
+                </div>
+
+            <?php
+            endwhile;
         }
 
-        private function rotateRight(Node $a) {
+        public function search($inStr) {
 
-        }
-
-        private function rotateLeftThenRight(Node $n) {
-
-            $n -> left = rotateLeft($n -> left);
-            return rotateRight($n);
-        }
-
-        private function rotateRightThenLeft(Node $n) {
-
-            $n -> right = rotateRight($n -> right);
-            return rotateLeft($n);
-        }
-
-        private function height(Node $n) {
-            if ($n == null) {
-                return -1;
+            $curNode = $head;
+            while ($curNode -> next != null) {
+                //Check each val against input val
             }
-            return $n -> height;
         }
-
-        private function setBalance1(Node $n) {
-
-        }
-
-        private function setBalance2(Node $n1, Node $n2) {
-
-        }
-
-
     }
 
     class Node {
 
-        private $val;
-        private $balance;
-        private $height;
-        private $left;
-        private $right;
-        private $parentNode;
-
-        public function _construct($val, $parentNode) {
-            $this -> val = $val;
-            $this -> parentNode = $parentNode;
-        }
+        public $next;
+        public $data;
+        public $numVal;
     }
     //
 
