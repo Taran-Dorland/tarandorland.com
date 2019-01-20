@@ -34,12 +34,14 @@
 
             </div>
             <div class="row-search">
-                <div class="search-bar">
-                    <input id="in1" class="form-control mr-sm-2" placeholder="Example: takeout" aria-label="Search" type="text" name="searchTxt" required>
-                </div>
-                <div class="btn-container">
-                    <input class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit" onclick="" value="Search"></button>
-                </div>
+                <form action="shopchallenge.php" method="POST">
+                    <div class="search-bar">
+                        <input id="in1" class="form-control mr-sm-2" placeholder="Example: takeout" aria-label="Search" type="text" name="searchTxt" required>
+                    </div>
+                    <div class="btn-container">
+                        <input class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit" value="Search">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -74,16 +76,26 @@
         <div class="main-container">
             <?php 
 
-            function outputResults($list) {
+            function outputResults($resultRefs) {
 
                 //Output the results from the user's search
-                for ($list -> rewind(); $list -> valid(); $list -> next()) : ?>
+                for ($i = 0; $i < count($obj); $i++) {
+                    for ($j = 0; $j < count($resultRefs); $j++) {
 
-                <div class="results">
-                    <?=$list -> current()[1] . " " . $list -> current()[0]?>
-                </div>
+                        //If the result matches a json object, output json data
+                        if ($i == $resultRefs[$j]) : ?>
 
-            <?php endfor; }?>
+                            <div class="results">
+                                <?=$obj[$i] -> title?>
+                            </div>
+
+                    <?php endif;
+
+                    }
+                }
+            }
+                
+            ?>
         </div>
     </div>
 
@@ -98,14 +110,29 @@
 
 <?php
 
-    if (isset($_POST['submit'])) {
-        echo "TEST";
-    }
+//Grab user input, send to search function
+if (isset($_POST['submit'])) {
 
-    function search() {
+    $inStr = $_POST['searchTxt'];
+    search($list, $inStr);
+}
 
+    function search($list, $inStr) {
 
+        $resultObjRef;
 
+        for ($list -> rewind(); $list -> valid(); $list -> next()) {
+
+            if ($list -> current()[0] == $inStr) {
+                //Strings match
+                $resultObjRef = $resultObjRef . $list -> current()[1] . ',';
+            }
+        }
+
+        //Put results into an array
+        $resultRefs = explode(",", $resultObjRef);
+
+        outputResults($$resultRefs);
     }
 
 
