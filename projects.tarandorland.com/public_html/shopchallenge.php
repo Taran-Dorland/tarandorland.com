@@ -62,6 +62,8 @@
         }
     }
 
+    $LL -> output();
+
     class LinkedList {
 
         private $head;
