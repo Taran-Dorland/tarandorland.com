@@ -87,6 +87,8 @@
             }
         }
 
+        echo $resultObjRef;
+
         //Put results into an array
         $resultRefs = explode(",", $resultObjRef);
         
