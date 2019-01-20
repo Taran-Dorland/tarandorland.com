@@ -137,7 +137,7 @@
 
                     <div class="results">
                         <div class="star">
-                            <a href="#">
+                            <a href="#id?=<?=$j?>">
                                 <span onclick="favouriteItem()" class="fa fa-star"></span>
                             </a>
                         </div>
