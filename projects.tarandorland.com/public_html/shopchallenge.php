@@ -139,7 +139,7 @@
                     <div id="r<?=$i?>" class="results">
                         <div id="s<?=$i?>" class="star">
                             <a href="#id=<?=$i?>">
-                                <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star"></span>
+                                <input id="sp<?=$i?>" type="checkbox" onclick="favouriteItem()" value="" class="fa fa-star">
                             </a>
                         </div>
                         <div id="t<?=$i?>" class="title">
