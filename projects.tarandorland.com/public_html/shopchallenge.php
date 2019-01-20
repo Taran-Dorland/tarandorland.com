@@ -59,8 +59,10 @@
 
             echo $obj[1] -> keywords;
 
-            foreach ($obj->keywords as $mydata) {
-                echo $mydata . "\n";
+            foreach ($obj as $mydata) {
+                foreach ($mydata->keywords as $keywords1) {
+                    echo $keywords1 . "\n";
+                }
             }
 
             foreach ($obj as $keywords) : ?>
