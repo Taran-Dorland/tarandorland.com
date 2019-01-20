@@ -12,7 +12,14 @@ function favouriteItem() {
     //Get element with correct ID
     var p = document.getElementById(oldId);
 
-    document.getElementById(oldId).checked = true;
+    var item = document.getElementById(oldId)
+    
+    //Check the star
+    if (item.checked == false) {
+        item.checked = true;
+    } else {
+        item.checked = false;
+    }
 
     //Clone
     var p_prime = p.cloneNode(true);
