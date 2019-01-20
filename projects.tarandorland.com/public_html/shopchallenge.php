@@ -128,10 +128,10 @@
 
                         </div>
                         <div class="title">
-                            <?=$obj_out[$i] -> title?>
+                            <span><?=$obj_out[$i] -> title?></span>
                         </div>
                         <div class="desc">
-                            <?=$obj_out[$i] -> body?>
+                            <span><?=$obj_out[$i] -> body?></span>
                         </div>
                     </div>
 
