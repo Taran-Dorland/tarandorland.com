@@ -120,6 +120,9 @@
         for ($i = 0; $i < count($obj_out); $i++) {
             for ($j = 0; $j < count($rrOut); $j++) {
 
+                $oot = $obj_out[$i] -> title;
+                $oob = $obj_out[$i] -> body;
+
                 //If the result matches a json object, output json data
                 if ($i == $rrOut[$j]) : ?>
 
@@ -128,10 +131,10 @@
                             <span>Star here</span>
                         </div>
                         <div class="title">
-                            <?=$obj_out[$i] -> title?>
+                            <?=$oot?>
                         </div>
                         <div class="desc">
-                            <?=$obj_out[$i] -> body?>
+                            <?=$oob?>
                         </div>
                     </div>
 
