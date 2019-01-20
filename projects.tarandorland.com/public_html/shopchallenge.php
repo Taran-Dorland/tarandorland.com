@@ -64,18 +64,9 @@
         }
     }
 
-    testOutput($list);
-
-    function testOutput($list) {
-
-        for ($list -> rewind(); $list -> valid(); $list -> next()) {
-
-            echo $list -> current()[1];
-        }
-    }
     
 
-    //outputResults();
+    outputResults($list);
 
     ?>
 
@@ -83,16 +74,16 @@
         <div class="main-container">
             <?php 
 
-            function outputResults() {
+            function outputResults($list) {
 
                 //Output the results from the user's search
-                while ($cur != null) : ?>
+                for ($list -> rewind(); $list -> valid(); $list -> next()) : ?>
 
                 <div class="results">
-                    <?=$cur -> data?>
+                    <?=$list -> current()[1] . " " . $list -> current()[0]?>
                 </div>
 
-                <?php endwhile; }?>
+            <?php endfor; }?>
         </div>
     </div>
 
