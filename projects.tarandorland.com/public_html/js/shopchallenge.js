@@ -16,11 +16,9 @@ async function favouriteItem() {
     //Get element with correct ID
     var p = document.getElementById(oldId);
 
-    var item = document.getElementById(oldId)
-
     //Check the star
-    if (item.checked == false) {
-        item.checked = true;
+    if (p.checked == false) {
+        p.checked = true;
 
         //Clone
         var p_prime = p.cloneNode(true);
@@ -30,7 +28,7 @@ async function favouriteItem() {
         document.getElementById('favCon').appendChild(p_prime);
 
     } else {
-        item.checked = false;
+        p.checked = false;
 
         //Delete this id
         var newId = "rn".concat(strId);
