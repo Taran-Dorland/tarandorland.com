@@ -50,6 +50,9 @@
                 </form>
             </div>
         </div>
+        <div class="main-container">
+            <h5>Results:</h5>
+        </div>
     </div>
 
     <?php
@@ -152,6 +155,10 @@
         }
     }
     ?>
+        </div>
+
+        <div class="main-container">
+            <h5>Favourites:</h5>
         </div>
     </div>
 
