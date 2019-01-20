@@ -138,8 +138,8 @@
 
                     <div id="r<?=$i?>" class="results">
                         <div id="s<?=$i?>" class="star">
-                            <a href="#id=<?=$i?>">
-                                <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star"></span>
+                            <a href="#id=<?=$i?>" onclick="favouriteItem()">
+                                <span id="sp<?=$i?>" class="fa fa-star"></span>
                             </a>
                         </div>
                         <div id="t<?=$i?>" class="title">
