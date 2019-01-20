@@ -59,7 +59,7 @@
 
             //echo $obj[1] -> keywords;
 
-            for ($x = 0; $x < $obj.sizeof(); $x++) {
+            for ($x = 0; $x < count($obj); $x++) {
                 echo $obj[$x] -> keywords . "\n";
             }
             
