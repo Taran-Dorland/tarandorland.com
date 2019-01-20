@@ -75,10 +75,14 @@
 
         for ($list -> rewind(); $list -> valid(); $list -> next()) {
 
-            echo $list -> current()[0];
+            $curStr = $list -> current()[0];
+
+            if ($curStr == $inStr) {
+                //Strings match
+                echo $curStr;
+            }
         }
 
-        echo "test";
         echo $resultObjRef;
 
         //Put results into an array
