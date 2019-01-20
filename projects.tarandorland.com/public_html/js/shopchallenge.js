@@ -3,7 +3,7 @@
 async function favouriteItem() {
 
     //Wait
-    Console.log('Waiting..');
+    console.log('Waiting..');
     await sleep(2000);
 
     //Capture the URL which contains the ID of the obj to favourite
