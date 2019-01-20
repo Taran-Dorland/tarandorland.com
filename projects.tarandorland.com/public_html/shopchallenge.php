@@ -76,17 +76,12 @@
         for ($list -> rewind(); $list -> valid(); $list -> next()) {
 
             $curStr = $list -> current()[0];
+            $curNum = $list -> current()[1];
 
             if ($curStr == $inStr) {
                 //Strings match
-                $resultObjRef = $resultObjRef . $list -> current()[1] . ",";
+                $resultObjRef = $resultObjRef . $curNum . ",";
             }
-
-            if ($list -> current()[0] == $inStr) {
-                //Strings match
-                $resultObjRef = $resultObjRef . $list -> current()[1] . ",";
-            }
-            echo $resultObjRef;
         }
 
         echo $resultObjRef;
