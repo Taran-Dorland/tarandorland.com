@@ -56,10 +56,12 @@
     //Add all the keywords and their associated object reference to the linked list
     for ($x = 0; $x < count($obj); $x++) {
 
+        //Needs to account for both ',' and ' ' in order to search keywords correctly
         $keywords = explode(",", $obj[$x] -> keywords);
         $spc_sep = implode(" ", $keywords);
         $keywords = explode(" ", $spc_sep);
 
+        //Put each obj into an array, then put those arrays into the linked list
         for ($i = 0; $i < count($keywords); $i++) {
 
             //Keyword + associated objects ref
@@ -68,13 +70,15 @@
         }
     }
 
-    //Grab user input, send to search function
+    //Grab user input, search items in the list
     if (isset($_POST['submit'])) {
 
+        //Get user input
         $inStr = $_POST['searchTxt'];
         
         $resultObjRef;
 
+        //Checks input str against each keyword str in the linked list
         for ($list -> rewind(); $list -> valid(); $list -> next()) {
 
             $curStr = $list -> current()[0];
@@ -83,6 +87,7 @@
             //SPECIAL CASES:
             $inStr_spc = "(" . $inStr . ")";
 
+            //String up the approproiate obj number references to be exploded into an array
             if ($curStr == $inStr) {
                 //Strings match
                 $resultObjRef = $resultObjRef . $curNum . ",";
@@ -96,11 +101,8 @@
 
         //Put results into an array
         $resultRefs = explode(",", $resultObjRef);
-        
-        for ($x = 0; $x < count($resultRefs); $x++) {
-            echo $resultRefs[$x];
-        }
 
+        //Output results
         outputResults($resultRefs);
     }
 
