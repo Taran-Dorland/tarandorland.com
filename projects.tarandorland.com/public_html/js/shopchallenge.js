@@ -1,6 +1,6 @@
 
 
-function favouriteItem() {
+async function favouriteItem() {
 
     //Wait
     Console.log("Waiting..");
