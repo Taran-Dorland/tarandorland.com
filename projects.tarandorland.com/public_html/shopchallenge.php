@@ -14,7 +14,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS -->
-    <link href="css/main.css" rel="stylesheet">
     <link href="css/main-projects.css" rel="stylesheet">
     
 </head>
@@ -42,10 +41,13 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="">Search</button>
                 </div>
             </div>
-
-
-
         </div>
+    </div>
+
+    <div class="wrapper-content">
+
+
+
     </div>
 
     <!-- Bootstrap Core JavaScript -->
@@ -58,6 +60,12 @@
 </html>
 
 <?php
+
+$json = file_get_contents("https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000");
+$obj = json_decode($json);
+
+echo $obj[0] -> title;
+
 
 
 
