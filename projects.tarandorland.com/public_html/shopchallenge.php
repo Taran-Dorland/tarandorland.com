@@ -89,7 +89,10 @@
 
         //Put results into an array
         $resultRefs = explode(",", $resultObjRef);
-        echo $resultRefs;
+        
+        foreach ($resultRefs as $out) {
+            echo $out;
+        }
 
         outputResults($resultRefs);
     }
