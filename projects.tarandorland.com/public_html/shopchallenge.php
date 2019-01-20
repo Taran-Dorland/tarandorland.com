@@ -107,7 +107,7 @@
         $result_refs = array_unique($resultRefs);
 
         //Output results
-        outputResults($result_refs);
+        outputResults($result_refs, $obj);
     }
 
     ?>
@@ -116,17 +116,18 @@
         <div class="main-container">
             <?php 
 
-            function outputResults($rrOut) {
+            function outputResults($rrOut, $obj_out) {
 
                 //Output the results from the user's search
-                for ($i = 0; $i < count($obj); $i++) {
+                for ($i = 0; $i < count($obj_out); $i++) {
+                    echo $i;
                     for ($j = 0; $j < count($rrOut); $j++) {
 
                         //If the result matches a json object, output json data
                         if ($i == $rrOut[$j]) : ?>
 
                             <div class="results">
-                                <?=$obj[$i] -> title?>
+                                <?=$obj_out[$i] -> title?>
                             </div>
 
                     <?php endif;
