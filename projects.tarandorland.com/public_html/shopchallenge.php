@@ -59,11 +59,13 @@
 
             //echo $obj[1] -> keywords;
 
-            for ($x = 0; $x < count($obj); $x++) {
-                echo $obj[$x] -> keywords . "\n";
-            }
-            
-            ?>
+            for ($x = 0; $x < count($obj); $x++) : ?>
+
+                <div class="results">
+                    <?=$obj[$x] -> keywords?>
+                </div>
+
+            <?php endfor; ?>
         </div>
     </div>
 
