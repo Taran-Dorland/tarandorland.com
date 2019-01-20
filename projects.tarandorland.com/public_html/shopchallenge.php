@@ -59,7 +59,7 @@
         for ($i = 0; $i < count($keywords); $i++) {
 
             //$arrData = array($keywords, (string)$x);
-            $list -> push($keywords);
+            $list -> push($keywords[$i]);
         }
     }
 
