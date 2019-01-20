@@ -117,6 +117,7 @@ div.results {
 div.star {
     width: 10%;
     height: 100%;
+    float: left;
     background-color: green;
 }
 
