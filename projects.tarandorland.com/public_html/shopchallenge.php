@@ -65,26 +65,15 @@
             $list -> push($arrData);
         }
     }
-    
-    test($list);
 
     //Grab user input, send to search function
     if (isset($_POST['submit'])) {
 
         $inStr = $_POST['searchTxt'];
-
-        search($list, $inStr, $obj);
-    }
-
-    function test($abc) {
         
-    }
-
-    function search($list, $inStr) {
-
         $resultObjRef;
 
-        for ($list -> rewind(); $list -> current != null; $list -> next()) {
+        for ($list -> rewind(); $list -> valid(); $list -> next()) {
 
             if ($list -> current()[0] == $inStr) {
                 //Strings match
@@ -101,9 +90,10 @@
         for ($x = 0; $x < count($resultRefs); $x++) {
             echo $resultRefs[$x];
         }
-
-        return;
+        
         //outputResults($resultRefs);
+
+
     }
 
     ?>
