@@ -79,8 +79,14 @@
 
             $curStr = $list -> current()[0];
             $curNum = $list -> current()[1];
+            
+            //SPECIAL CASES:
+            $inStr_spc = "(" . $inStr . ")";
 
             if ($curStr == $inStr) {
+                //Strings match
+                $resultObjRef = $resultObjRef . $curNum . ",";
+            } else if ($inStr_spc == $curStr) {
                 //Strings match
                 $resultObjRef = $resultObjRef . $curNum . ",";
             }
