@@ -128,10 +128,10 @@
 
                         </div>
                         <div class="title">
-                            <span><?=$obj_out[$i] -> title?></span>
+                            <?=$obj_out[$i] -> title?>
                         </div>
                         <div class="desc">
-                            <span><?=$obj_out[$i] -> body?></span>
+                            <?=$obj_out[$i] -> body?>
                         </div>
                     </div>
 
@@ -141,12 +141,6 @@
         }
     }
     ?>
-        </div>
-    </div>
-
-    <div class="wrapper-content">
-        <div class="main-container">
-
         </div>
     </div>
 
