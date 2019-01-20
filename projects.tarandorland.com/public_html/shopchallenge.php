@@ -75,11 +75,7 @@
 
         for ($list -> rewind(); $list -> valid(); $list -> next()) {
 
-            if ($list -> current()[0] == $inStr) {
-                //Strings match
-                $resultObjRef = $resultObjRef . $list -> current()[1] . ",";
-            }
-            echo $resultObjRef;
+            echo $list -> current()[0];
         }
 
         echo "test";
