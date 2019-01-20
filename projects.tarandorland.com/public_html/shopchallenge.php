@@ -62,7 +62,14 @@
         }
     }
 
-    $LL -> output();
+    $LL -> outputResults();
+
+    class Node {
+
+        public $next;
+        public $data;
+        public $numVal;
+    }
 
     class LinkedList {
 
@@ -100,20 +107,6 @@
             }
         }
 
-        public function output() {
-
-            $curNode = $head;
-            while ($curNode != null) : ?>
-
-                <div class="results">
-                    <?=$curNode -> numVal?>
-                    <?=$curNode -> data?>
-                </div>
-
-            <?php
-            endwhile;
-        }
-
         public function search($inStr) {
 
             $curNode = $head;
@@ -121,14 +114,6 @@
                 //Check each val against input val
             }
         }
-    }
-
-    class Node {
-
-        public $next;
-        public $data;
-        public $numVal;
-    }
     //
 
     ?>
@@ -139,14 +124,16 @@
 
             function outputResults() {
 
-            //Output the results from the user's search
-            for ($x = 0; $x < count($obj); $x++) : ?>
+                $cur = $head;
+
+                //Output the results from the user's search
+                while ($cur != null) : ?>
 
                 <div class="results">
-                    <?=$obj[$x] -> keywords?>
+                    <?=$cur -> data?>
                 </div>
 
-            <?php endfor; } ?>
+                <?php endwhile; } } ?>
         </div>
     </div>
 
