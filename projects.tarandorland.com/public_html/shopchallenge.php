@@ -110,32 +110,35 @@
         outputResults($result_refs, $obj);
     }
 
+    function outputResults($rrOut, $obj_out) { ?>
+
+        <div class="wrapper-content">
+            <div class="main-container">
+
+        <?php
+        //Output the results from the user's search
+        for ($i = 0; $i < count($obj_out); $i++) {
+            for ($j = 0; $j < count($rrOut); $j++) {
+
+                //If the result matches a json object, output json data
+                if ($i == $rrOut[$j]) : ?>
+
+                    <div class="results">
+                        <?=$obj_out[$i] -> title?>
+                    </div>
+
+            <?php endif;
+
+            }
+        }
+    }
     ?>
+        </div>
+    </div>
 
     <div class="wrapper-content">
         <div class="main-container">
-            <?php 
 
-            function outputResults($rrOut, $obj_out) {
-
-                //Output the results from the user's search
-                for ($i = 0; $i < count($obj_out); $i++) {
-                    for ($j = 0; $j < count($rrOut); $j++) {
-
-                        //If the result matches a json object, output json data
-                        if ($i == $rrOut[$j]) : ?>
-
-                            <div class="results">
-                                <?=$obj_out[$i] -> title?>
-                            </div>
-
-                    <?php endif;
-
-                    }
-                }
-            }
-                
-            ?>
         </div>
     </div>
 
