@@ -2,6 +2,10 @@
 
 function favouriteItem() {
 
+    //Wait
+    Console.log("Waiting..");
+    await sleep(2000);
+
     //Capture the URL which contains the ID of the obj to favourite
     var currentLocation = window.location.href;
     var strId = currentLocation.substring(55);
@@ -31,4 +35,8 @@ function favouriteItem() {
 
 
 
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }

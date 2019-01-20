@@ -132,18 +132,15 @@
                 $oot = $obj_out[$i] -> title;
                 $oob = $obj_out[$i] -> body;
 
-                header('Location: shopchallenge.php#id=' . $i);
-
                 //If the result matches a json object, output json data, decode body for html elements
                 //All html items are generated with an id corresponding to the id of the appropriate json obj
                 if ($i == $rrOut[$j]) : ?>
 
                     <div id="r<?=$i?>" class="results">
                         <div id="s<?=$i?>" class="star">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <a href="#id=<?=$i?>">
+                                <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star"></span>
+                            </a>
                         </div>
                         <div id="t<?=$i?>" class="title">
                             <?=$oot = html_entity_decode($oot)?>
