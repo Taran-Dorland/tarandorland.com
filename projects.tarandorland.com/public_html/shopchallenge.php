@@ -82,6 +82,7 @@
             echo $resultObjRef;
         }
 
+        echo "test";
         echo $resultObjRef;
 
         //Put results into an array
@@ -90,7 +91,7 @@
         for ($x = 0; $x < count($resultRefs); $x++) {
             echo $resultRefs[$x];
         }
-        
+
         //outputResults($resultRefs);
 
 
