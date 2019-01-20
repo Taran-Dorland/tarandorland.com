@@ -117,12 +117,14 @@ div.results {
 div.star {
     width: 50px;
     height: 100%;
+    padding-right: 5px;
     background-color: green;
 }
 
 div.title {
     width: 150px;
     height: 100%;
+    padding-right: 5px;
     background-color: aqua;
 }
 
