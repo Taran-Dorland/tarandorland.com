@@ -30,7 +30,10 @@
                     Description:
                 </p>
 
-                <a class="btn-return" href="https://projects.tarandorland.com">Return to Project Directory</a>
+                <div><a class="btn-return" href="https://projects.tarandorland.com">Return to Project Directory</a></div>
+                <div><a href="https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000">JSON Data being used</a></div>
+                <div><a href="#">Source Code</a></div>
+                
 
             </div>
             <div class="row-search">
@@ -123,10 +126,7 @@
                 $oot = $obj_out[$i] -> title;
                 $oob = $obj_out[$i] -> body;
 
-                $oot = html_entity_decode($oot);
-                $oob = html_entity_decode($oob);
-
-                //If the result matches a json object, output json data
+                //If the result matches a json object, output json data, decode body for html elements
                 if ($i == $rrOut[$j]) : ?>
 
                     <div class="results">
@@ -134,10 +134,10 @@
                             <span>Star here</span>
                         </div>
                         <div class="title">
-                            <?=$oot?>
+                            <?=$oot = html_entity_decode($oot)?>
                         </div>
                         <div class="desc">
-                            <?=$oob?>
+                            <?=$oob = html_entity_decode($oob)?>
                         </div>
                     </div>
 
