@@ -123,6 +123,9 @@
                 $oot = $obj_out[$i] -> title;
                 $oob = $obj_out[$i] -> body;
 
+                $oot = html_entity_decode($oot);
+                $oob = html_entity_decode($oob);
+
                 //If the result matches a json object, output json data
                 if ($i == $rrOut[$j]) : ?>
 
