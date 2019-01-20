@@ -133,18 +133,19 @@
                 $oob = $obj_out[$i] -> body;
 
                 //If the result matches a json object, output json data, decode body for html elements
+                //All html items are generated with an id corresponding to the id of the appropriate json obj
                 if ($i == $rrOut[$j]) : ?>
 
-                    <div class="results">
-                        <div class="star">
+                    <div id="r<?=$i?>" class="results">
+                        <div id="s<?=$i?>" class="star">
                             <a href="#id=<?=$i?>">
-                                <span id="<?=$i?>" onclick="favouriteItem()" class="fa fa-star"></span>
+                                <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star"></span>
                             </a>
                         </div>
-                        <div class="title">
+                        <div id="t<?=$i?>" class="title">
                             <?=$oot = html_entity_decode($oot)?>
                         </div>
-                        <div class="desc">
+                        <div id="d<?=$i?>" class="desc">
                             <?=$oob = html_entity_decode($oob)?>
                         </div>
                     </div>
