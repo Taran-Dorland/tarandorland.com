@@ -44,28 +44,30 @@
         </div>
     </div>
 
-    <div class="wrapper-content">
 
-
-
-    </div>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Twitch API JavaScript -->
-    <script src="js/twitchCall.js"></script>
 
 </body>
 </html>
 
 <?php
 
+$separator = "\n";
+
 $json = file_get_contents("https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000");
 $obj = json_decode($json);
 
-echo $obj[0] -> keywords;
+ob_start();
+echo '<div class="wrapper-content"></div>' . $separator;
+echo '<div class="main-container"></div>' . $separator;
+$content = ob_get_clean();
 
-
-
+$sections = explode($separator, $content);
 ?>
+    <div class="wrapper-content">
+        <div class="main-container">
+            <?php echo $obj[0] -> keywords; ?>
+        </div>
+    </div>
