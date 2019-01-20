@@ -134,7 +134,9 @@
 
                     <div class="results">
                         <div class="star">
-                            <span onclick="favouriteItem()" class="fa fa-star"></span>
+                            <a href="#">
+                                <span onclick="favouriteItem()" class="fa fa-star"></span>
+                            </a>
                         </div>
                         <div class="title">
                             <?=$oot = html_entity_decode($oot)?>
