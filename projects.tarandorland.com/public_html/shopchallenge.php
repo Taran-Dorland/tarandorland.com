@@ -68,7 +68,31 @@
 
     
 
-    //outputResults($list);
+    //Grab user input, send to search function
+    if (isset($_POST['submit'])) {
+
+        $inStr = $_POST['searchTxt'];
+        search($list, $inStr);
+    }
+
+    function search($list, $inStr) {
+
+        $resultObjRef;
+
+        for ($list -> rewind(); $list -> valid(); $list -> next()) {
+
+            if ($list -> current()[0] == $inStr) {
+                //Strings match
+                $resultObjRef = $resultObjRef . $list -> current()[1] . ',';
+            }
+        }
+
+        //Put results into an array
+        $resultRefs = explode(",", $resultObjRef);
+        echo $resultRefs;
+
+        outputResults($resultRefs);
+    }
 
     ?>
 
@@ -110,30 +134,6 @@
 
 <?php
 
-//Grab user input, send to search function
-if (isset($_POST['submit'])) {
-
-    $inStr = $_POST['searchTxt'];
-    search($list, $inStr);
-}
-
-    function search($list, $inStr) {
-
-        $resultObjRef;
-
-        for ($list -> rewind(); $list -> valid(); $list -> next()) {
-
-            if ($list -> current()[0] == $inStr) {
-                //Strings match
-                $resultObjRef = $resultObjRef . $list -> current()[1] . ',';
-            }
-        }
-
-        //Put results into an array
-        $resultRefs = explode(",", $resultObjRef);
-
-        outputResults($$resultRefs);
-    }
 
 
 ?>
