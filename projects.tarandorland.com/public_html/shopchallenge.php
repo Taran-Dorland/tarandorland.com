@@ -90,11 +90,11 @@
         //Put results into an array
         $resultRefs = explode(",", $resultObjRef);
         
-        foreach ($resultRefs as $out) {
-            echo $out;
+        for ($x = 0; $x < count($resultRefs); $x++) {
+            echo $resultRefs[$x];
         }
 
-        outputResults($resultRefs);
+        //outputResults($resultRefs);
     }
 
     ?>
