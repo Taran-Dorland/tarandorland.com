@@ -58,8 +58,8 @@
 
         for ($i = 0; $i < count($keywords); $i++) {
 
-            $arrData = array($keywords, (string)$x);
-            $list -> push($arrData);
+            //$arrData = array($keywords, (string)$x);
+            $list -> push($keywords);
         }
     }
 
@@ -69,8 +69,7 @@
 
         for ($list -> rewind(); $list -> valid(); $list -> next()) {
 
-            echo $list -> current()[0];
-            echo $list -> current()[1];
+            echo $list -> current();
         }
     }
     
