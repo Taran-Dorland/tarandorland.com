@@ -120,7 +120,6 @@
 
                 //Output the results from the user's search
                 for ($i = 0; $i < count($obj_out); $i++) {
-                    echo $i;
                     for ($j = 0; $j < count($rrOut); $j++) {
 
                         //If the result matches a json object, output json data
