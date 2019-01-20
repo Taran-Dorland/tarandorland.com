@@ -120,19 +120,24 @@ div.star {
     width: 5%;
     height: 100%;
     float: left;
+    border-style: solid;
+    border-width: 1px;
 }
 
 div.title {
     width: 30%;
     height: 100%;
     float: left;
+    border-style: solid;
+    border-width: 1px;
 }
 
 div.body {
     width: 65%;
     height: 100%;
     float: left;
-    background-color: grey;
+    border-style: solid;
+    border-width: 1px;
 }
 
 img.user-pic {
