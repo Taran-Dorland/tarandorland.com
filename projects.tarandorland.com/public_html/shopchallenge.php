@@ -58,14 +58,24 @@
 
         for ($i = 0; $i < count($keywords); $i++) {
 
-            echo $keywords[$i];
+            $arrData = array($keywords, (string)$x);
+            $list -> push($arrData);
         }
     }
 
+    testOutput();
 
+    function testOutput() {
+
+        for ($list -> rewind(); $list -> valid(); $list -> next()) {
+
+            echo $list -> current()[0];
+            echo $list -> current()[1];
+        }
+    }
     
 
-    outputResults();
+    //outputResults();
 
     ?>
 
@@ -74,8 +84,6 @@
             <?php 
 
             function outputResults() {
-
-                $cur = $head;
 
                 //Output the results from the user's search
                 while ($cur != null) : ?>
