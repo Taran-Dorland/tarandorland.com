@@ -63,9 +63,14 @@
         }
     }
 
-    for ($list -> rewind(); $list -> valid(); $list -> next()) {
+    testOutput($list);
 
-        echo $list -> current();
+    function testOutput($list) {
+
+        for ($list -> rewind(); $list -> valid(); $list -> next()) {
+
+            echo $list -> current();
+        }
     }
     
 
