@@ -115,22 +115,22 @@ div.results {
 }
 
 div.star {
-    width: 50px;
+    width: 10%;
     height: 100%;
-    padding-right: 5px;
     background-color: green;
 }
 
 div.title {
-    width: 150px;
+    width: 40%;
     height: 100%;
-    padding-right: 5px;
+    float: left;
     background-color: aqua;
 }
 
 div.desc {
     width: 50%;
     height: 100%;
+    float: left;
     background-color: grey;
 }
 
