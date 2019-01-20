@@ -75,10 +75,10 @@
 //https://stackoverflow.com/questions/6750531/using-a-php-file-to-generate-a-mysql-dump
 
 //Values used to connect to DB
-$servername = "localhost";
-$username = "tarandb";
-$password = "dblogin13542";
-$database = "3400_project";
+$servername = "";
+$username = "";
+$password = "";
+$database = "";
 $sql = "";
 
 //Connect to DB

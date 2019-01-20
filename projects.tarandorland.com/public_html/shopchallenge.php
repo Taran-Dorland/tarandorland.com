@@ -91,16 +91,21 @@
             if ($curStr == $inStr) {
                 //Strings match
                 $resultObjRef = $resultObjRef . $curNum . ",";
-            } else if ($inStr_spc == $curStr) {
+            } else if ($curStr == $inStr_spc) {
                 //Strings match
                 $resultObjRef = $resultObjRef . $curNum . ",";
             }
         }
 
-        echo $resultObjRef;
-
         //Put results into an array
         $resultRefs = explode(",", $resultObjRef);
+
+        //No duplicate Values
+        $result_refs = array_unique($resultRefs);
+
+        $rr_imp = implode(",", $result_refs);
+
+        echo $rr_imp;
 
         //Output results
         outputResults($resultRefs);
