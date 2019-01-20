@@ -131,7 +131,7 @@
                             <?=$obj_out[$i] -> title?>
                         </div>
                         <div class="desc">
-                            <?=$obj_out[$i] -> body?>
+                            <?php echo $obj_out[$i] -> body; ?>
                         </div>
                     </div>
 
