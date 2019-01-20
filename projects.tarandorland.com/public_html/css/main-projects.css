@@ -29,6 +29,15 @@ div.main-container-2 {
     overflow: hidden;
 }
 
+div.main-container-3 {
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 div.row-info {
     position: relative;
     width: auto;
@@ -100,7 +109,6 @@ div.wrapper-content {
 }
 
 div.results {
-    overflow: visible;
     width: 100%;
     height: 100%;
     background-color: white;

@@ -113,7 +113,7 @@
     function outputResults($rrOut, $obj_out) { ?>
 
         <div class="wrapper-content">
-            <div class="main-container">
+            <div class="main-container-3">
 
         <?php
         //Output the results from the user's search
