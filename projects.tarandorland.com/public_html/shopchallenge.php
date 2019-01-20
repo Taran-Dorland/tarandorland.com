@@ -134,7 +134,7 @@
 
                     <div class="results">
                         <div class="star">
-                            <span class="fa fa-star"></span>
+                            <span onclick="favouriteItem()" class="fa fa-star"></span>
                         </div>
                         <div class="title">
                             <?=$oot = html_entity_decode($oot)?>
@@ -158,6 +158,9 @@
 
     <!-- Jquery -->
     <script src="js/jquery.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/shopchallenge.js"></script>
 
 </body>
 </html>

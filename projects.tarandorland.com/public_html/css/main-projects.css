@@ -117,7 +117,7 @@ div.results {
 }
 
 div.star {
-    width: 7.5%;
+    width: 5%;
     height: 100%;
     float: left;
     background-color: green;
@@ -131,7 +131,7 @@ div.title {
 }
 
 div.desc {
-    width: 62.5%;
+    width: 65%;
     height: 100%;
     float: left;
     background-color: grey;
