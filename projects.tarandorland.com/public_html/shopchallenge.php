@@ -65,17 +65,17 @@
             $list -> push($arrData);
         }
     }
-
     
 
     //Grab user input, send to search function
     if (isset($_POST['submit'])) {
 
         $inStr = $_POST['searchTxt'];
-        search($list, $inStr);
+
+        search($list, $inStr, $obj);
     }
 
-    function search($list, $inStr) {
+    function search(&$list, $inStr) {
 
         $resultObjRef;
 
