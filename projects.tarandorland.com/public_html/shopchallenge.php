@@ -57,19 +57,13 @@
 
             $test = "TEST MESSAGE";
 
-            echo $obj[1] -> keywords;
+            //echo $obj[1] -> keywords;
 
-            foreach ($obj as $mydata) {
-                foreach ($mydata->keywords as $keywords1) {
-                    echo $keywords1 . "\n";
-                }
+            for ($x = 0; $x < 100; $x++) {
+                echo $obj[$x] -> keywords;
             }
-
-            foreach ($obj as $keywords) : ?>
-            <div class="results">
-                <p><?=$keywords?></p>
-            </div>
-            <?php endforeach; ?>
+            
+            ?>
         </div>
     </div>
 
