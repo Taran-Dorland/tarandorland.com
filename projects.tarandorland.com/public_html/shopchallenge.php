@@ -77,9 +77,12 @@
 
             $curStr = $list -> current()[0];
 
+            echo $inStr;
+            echo $curStr;
+
             if ($curStr == $inStr) {
                 //Strings match
-                echo $curStr;
+                //echo $curStr;
             }
         }
 
