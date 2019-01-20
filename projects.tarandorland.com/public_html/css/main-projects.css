@@ -129,7 +129,7 @@ div.title {
     background-color: aqua;
 }
 
-div.desc {
+div.body {
     width: 65%;
     height: 100%;
     float: left;
@@ -147,4 +147,7 @@ a.btn-return {
     position: relative;
 }
 
+.checked {
+    color: green;
+}
 

@@ -145,7 +145,7 @@
                         <div id="t<?=$i?>" class="title">
                             <?=$oot = html_entity_decode($oot)?>
                         </div>
-                        <div id="d<?=$i?>" class="desc">
+                        <div id="b<?=$i?>" class="body">
                             <?=$oob = html_entity_decode($oob)?>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
     ?>
         </div>
 
-        <div class="main-container">
+        <div id="favCon" class="main-container">
             <h4>Favourites:</h4>
         </div>
     </div>
