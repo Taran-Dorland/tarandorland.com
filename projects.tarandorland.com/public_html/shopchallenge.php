@@ -114,6 +114,7 @@
                 //Check each val against input val
             }
         }
+    }
     //
 
     ?>
@@ -133,7 +134,7 @@
                     <?=$cur -> data?>
                 </div>
 
-                <?php endwhile; } } ?>
+                <?php endwhile; } ?>
         </div>
     </div>
 
