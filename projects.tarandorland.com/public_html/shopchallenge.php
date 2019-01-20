@@ -62,7 +62,7 @@
         }
     }
 
-    $LL -> outputResults();
+    outputResults();
 
     class Node {
 
