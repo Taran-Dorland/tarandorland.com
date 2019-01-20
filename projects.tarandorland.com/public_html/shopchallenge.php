@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="main-container">
-            <h5>Results:</h5>
+            <h4>Results:</h4>
         </div>
     </div>
 
@@ -158,7 +158,7 @@
         </div>
 
         <div class="main-container">
-            <h5>Favourites:</h5>
+            <h4>Favourites:</h4>
         </div>
     </div>
 
