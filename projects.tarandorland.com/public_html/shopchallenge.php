@@ -64,8 +64,7 @@
 $json = file_get_contents("https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000");
 $obj = json_decode($json);
 
-echo $obj[0] -> title;
-
+echo $obj[0] -> keywords;
 
 
 
