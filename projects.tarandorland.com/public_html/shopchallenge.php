@@ -125,7 +125,7 @@
 
                     <div class="results">
                         <div class="star">
-
+                            <span>Star here</span>
                         </div>
                         <div class="title">
                             <?=$obj_out[$i] -> title?>
