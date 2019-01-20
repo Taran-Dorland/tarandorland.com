@@ -59,9 +59,9 @@
 
             echo $obj[0] -> keywords;
 
-            foreach ($obj as $keywords) : ?>
+            foreach ($obj as $keywords -> keywords) : ?>
             <div class="results">
-                <?=$keywords?>
+                <p><?=$keywords?></p>
             </div>
             <?php endforeach; ?>
         </div>
