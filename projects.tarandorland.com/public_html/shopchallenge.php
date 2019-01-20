@@ -57,7 +57,7 @@
 
             $test = "TEST MESSAGE";
 
-            echo $obj[0] -> keywords;
+            echo $obj[1] -> keywords;
 
             foreach ($obj as $keywords -> keywords) : ?>
             <div class="results">
