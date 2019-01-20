@@ -75,6 +75,9 @@
 
         //Get user input
         $inStr = $_POST['searchTxt'];
+
+        //Set to lowercase
+        $inStr = strtolower($inStr);
         
         $resultObjRef;
 
@@ -103,12 +106,8 @@
         //No duplicate Values
         $result_refs = array_unique($resultRefs);
 
-        $rr_imp = implode(",", $result_refs);
-
-        echo $rr_imp;
-
         //Output results
-        outputResults($resultRefs);
+        outputResults($result_refs);
     }
 
     ?>
@@ -117,14 +116,14 @@
         <div class="main-container">
             <?php 
 
-            function outputResults($resultRefs) {
+            function outputResults($rrOut) {
 
                 //Output the results from the user's search
                 for ($i = 0; $i < count($obj); $i++) {
-                    for ($j = 0; $j < count($resultRefs); $j++) {
+                    for ($j = 0; $j < count($rrOut); $j++) {
 
                         //If the result matches a json object, output json data
-                        if ($i == $resultRefs[$j]) : ?>
+                        if ($i == $rrOut[$j]) : ?>
 
                             <div class="results">
                                 <?=$obj[$i] -> title?>
