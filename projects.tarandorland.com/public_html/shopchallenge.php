@@ -40,7 +40,7 @@
 
             </div>
             <div class="row-search">
-                <form action="shopchallenge.php" method="POST">
+                <form action="#" method="POST">
                     <div class="search-bar">
                         <input id="in1" class="form-control mr-sm-2" placeholder="Example: takeout" aria-label="Search" type="text" name="searchTxt" required>
                     </div>
