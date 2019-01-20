@@ -57,6 +57,8 @@
     for ($x = 0; $x < count($obj); $x++) {
 
         $keywords = explode(",", $obj[$x] -> keywords);
+        $spc_sep = implode(" ", $keywords);
+        $keywords = explode(" ", $spc_sep);
 
         for ($i = 0; $i < count($keywords); $i++) {
 
