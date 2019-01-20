@@ -4,7 +4,7 @@ async function favouriteItem() {
 
     //Wait
     console.log('Waiting..');
-    await sleep(20);
+    await sleep(50);
 
     //Capture the URL which contains the ID of the obj to favourite
     var currentLocation = window.location.href;
