@@ -49,7 +49,8 @@
     $json = file_get_contents("https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000");
     $obj = json_decode($json);
 
-    $LL = new LinkedList();
+    $head = null;
+    $tail = null;
 
     //Add all the keywords and their associated object reference to the linked list
     for ($x = 0; $x < count($obj); $x++) {
@@ -58,11 +59,9 @@
 
         for ($i = 0; $i < count($keywords); $i++) {
 
-            $LL -> addLast($keywords[$i], $x);
+            addLast($keywords[$i], $x);
         }
     }
-
-    outputResults();
 
     class Node {
 
@@ -71,51 +70,43 @@
         public $numVal;
     }
 
-    class LinkedList {
+    //Linked List:
 
-        private $head;
-        private $tail;
+    function addLast($data, $numVal) {
 
-        public function _construct() {
-            $head = null;
-            $tail = null;
-        }
+        if ($head == null) {
 
-        public function addLast($data, $numVal) {
+            $head = new Node();
+            $head -> data = $data;
+            $head -> numVal = $numVal;
+            $head -> next = null;
 
-            if ($head == null) {
+            $tail = $head;
+        } else {
 
-                $head = new Node();
-                $head -> data = $data;
-                $head -> numVal = $numVal;
-                $head -> next = null;
+            $toAdd = new Node();
+            $toAdd -> data = $data;
+            $toAdd -> numVal = $numVal;
 
-                $tail = $head;
-            } else {
-
-                $toAdd = new Node();
-                $toAdd -> data = $data;
-                $toAdd -> numVal = $numVal;
-
-                $current = $head;
-                while ($current -> next != null) {
-                    $current = $current -> next;
-                }
-
-                $current -> next = $toAdd;
-                $tail = $toAdd;
+            $current = $head;
+            while ($current -> next != null) {
+                $current = $current -> next;
             }
-        }
 
-        public function search($inStr) {
-
-            $curNode = $head;
-            while ($curNode -> next != null) {
-                //Check each val against input val
-            }
+            $current -> next = $toAdd;
+            $tail = $toAdd;
         }
     }
-    //
+
+    function search($inStr) {
+
+        $curNode = $head;
+        while ($curNode -> next != null) {
+            //Check each val against input val
+        }
+    }
+
+    outputResults();
 
     ?>
 
@@ -134,7 +125,7 @@
                     <?=$cur -> data?>
                 </div>
 
-                <?php endwhile; } ?>
+                <?php endwhile; }?>
         </div>
     </div>
 
