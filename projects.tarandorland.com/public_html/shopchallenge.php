@@ -124,7 +124,15 @@
                 if ($i == $rrOut[$j]) : ?>
 
                     <div class="results">
-                        <?=$obj_out[$i] -> title?>
+                        <div class="star">
+
+                        </div>
+                        <div class="title">
+                            <?=$obj_out[$i] -> title?>
+                        </div>
+                        <div class="desc">
+                            <?=$obj_out[$i] -> body?>
+                        </div>
                     </div>
 
             <?php endif;
