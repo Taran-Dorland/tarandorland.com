@@ -144,21 +144,22 @@
                     $stop = true;
                     if ($i == $rrOut[$j]) : ?>
 
-                    <div id="r<?=$i?>" class="results">
-                        <div id="s<?=$i?>" class="star">
-                            <a href="#id=<?=$i?>" id="st<?=$i?>" class="favA">
-                                <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star" checked="false"></span>
-                            </a>
+                        <div id="r<?=$i?>" class="results">
+                            <div id="s<?=$i?>" class="star">
+                                <a href="#id=<?=$i?>" id="st<?=$i?>" class="favA">
+                                    <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star" checked="false"></span>
+                                </a>
+                            </div>
+                            <div id="t<?=$i?>" class="title">
+                                <?=$oot = html_entity_decode($oot)?>
+                            </div>
+                            <div id="b<?=$i?>" class="body">
+                                <?=$oob = html_entity_decode($oob)?>
+                            </div>
                         </div>
-                        <div id="t<?=$i?>" class="title">
-                            <?=$oot = html_entity_decode($oot)?>
-                        </div>
-                        <div id="b<?=$i?>" class="body">
-                            <?=$oob = html_entity_decode($oob)?>
-                        </div>
-                    </div>
 
-            <?php endif;
+                    <?php endif;
+                    }
                 }
 
             }
