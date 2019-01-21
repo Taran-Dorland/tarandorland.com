@@ -145,7 +145,7 @@ a.btn-return {
     position: relative;
 }
 
-.checked {
+a.favA {
     color: green !important;
 }
 
