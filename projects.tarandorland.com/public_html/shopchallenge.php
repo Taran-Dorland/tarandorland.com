@@ -62,6 +62,11 @@
         Date: 1/20/2019
         Created with: PHP, Javascript
 
+        Files Being Used:
+            - shopchallenge.php
+            - js/shopchallenge.js
+            - css/main-projects.css
+
         Purpose: Fetches waste data from public api, allows user to search the data and it will return
                  data (Title and information) based on keywords. User can also favourite each object returned
                  which will be displayed with a green star next to them.
