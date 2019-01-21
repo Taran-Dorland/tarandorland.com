@@ -17,7 +17,17 @@ async function favouriteItem() {
     var p = document.getElementById(oldId);
 
     //Check the star
-    if (p.checked == false) {
+    if (p.checked == true) {
+
+        p.checked = false;
+
+        //Delete this id
+        var newId = "rn".concat(strId);
+        var newElem = document.getElementById(newId);
+
+        newElem.remove();
+
+    } else {
         p.checked = true;
 
         //Clone
@@ -27,17 +37,7 @@ async function favouriteItem() {
         //Add to html
         document.getElementById('favCon').appendChild(p_prime);
 
-    } else if (p.checked == true) {
-        p.checked = false;
-
-        //Delete this id
-        var newId = "rn".concat(strId);
-        var newElem = document.getElementById(newId);
-
-        newElem.remove();
     }
-
-
 
 
 }
