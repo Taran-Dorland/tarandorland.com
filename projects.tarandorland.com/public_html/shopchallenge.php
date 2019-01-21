@@ -125,6 +125,10 @@
             <div class="main-container-3">
 
         <?php
+
+        //Cant think of another way to fix this bug
+        $stop = false;
+
         //Output the results from the user's search
         for ($i = 0; $i < count($obj_out); $i++) {
             for ($j = 0; $j < count($rrOut); $j++) {
@@ -134,7 +138,15 @@
 
                 //If the result matches a json object, output json data, decode body for html elements
                 //All html items are generated with an id corresponding to the id of the appropriate json obj
-                if ($i == $rrOut[$j]) : ?>
+                if ($i == $rrOut[$j]) {
+
+                    if ($i == 0 && $stop == true) {
+                        return;
+                    } else {
+                        $stop = true;
+                    }
+                
+                ?>
 
                     <div id="r<?=$i?>" class="results">
                         <div id="s<?=$i?>" class="star">
@@ -150,7 +162,7 @@
                         </div>
                     </div>
 
-            <?php endif;
+                <?php }
 
             }
         }
