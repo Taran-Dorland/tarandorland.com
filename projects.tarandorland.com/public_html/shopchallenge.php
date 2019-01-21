@@ -136,6 +136,16 @@
                 $oot = $obj_out[$i] -> title;
                 $oob = $obj_out[$i] -> body;
 
+                //Prevents duplication results from obj 0
+                if ($i == 0) {
+                    if ($rrOut[$j] == 0) {
+                        if ($stop == true) {
+                            $rrOut[$j] = -1;
+                        }
+                        $stop = true;
+                    }
+                }
+
                 //If the result matches a json object, output json data, decode body for html elements
                 //All html items are generated with an id corresponding to the id of the appropriate json obj
                 if ($i == $rrOut[$j]) : ?>
