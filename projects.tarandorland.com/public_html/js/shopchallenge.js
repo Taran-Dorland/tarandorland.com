@@ -27,8 +27,14 @@ async function favouriteItem() {
 
         newElem.remove();
 
+        //Change colour
+        p.style.color = "grey";
+
     } else {
         p.checked = true;
+
+        //Change colour
+        p.style.color = "green";
 
         //Clone
         var p_prime = p.cloneNode(true);
