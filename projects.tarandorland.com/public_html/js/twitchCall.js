@@ -1,11 +1,16 @@
+/*
+By: Taran Dorland
+Purpose: Calls the twitch api to find their most recent <= 100 follows, returns the data into a table to easily read
+ToDO: Wanted to add a mini picture beside each user, caster type needs to be changed, placeholder could be used for other info, fix up some css formatting
+*/
 
+//References and info:
 //https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
 //https://www.w3schools.com/js/js_json_intro.asp
 //https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp
 //https://dev.twitch.tv/docs/api/reference/#get-users
 //https://dev.twitch.tv/docs/authentication/#getting-tokens
 //https://dev.twitch.tv/docs/api/guide/
-//https://steamdb.info/
 
 //==---------------------------------------------------------------------------------------------==
 //Makes multiple calls to twitch api to retrieve info and displays it on the page
@@ -27,11 +32,7 @@ function callAPI() {
     var array = JSON.parse(this.response);
 
     //console.log(array.data[0].login);
-
-    //Reference for accessing multiple users at once
-    //!!!
-    console.log(array.data[0]);
-
+    //console.log(array.data[0]);
     //console.log(array.data[1]);
 
     //Update HTML with info of input user
@@ -53,8 +54,7 @@ function callAPI() {
 
       var arrayFollows = JSON.parse(this.response);
 
-      //!!!
-      console.log(arrayFollows);
+      //console.log(arrayFollows);
 
       var requestFolConvert = "https://api.twitch.tv/helix/users?id="
       var addOne = "&id=";
@@ -70,7 +70,7 @@ function callAPI() {
         requestFolConvert += arrayFollows.data[i].to_id;
       }
 
-      console.log("REQUEST: " + requestFolConvert);
+      //console.log("REQUEST: " + requestFolConvert);
 
       //==---------------------------------------------------------------------------------------------==
       //Converting followed users ID's to Display names so people can actually see who it is
@@ -84,8 +84,7 @@ function callAPI() {
 
         var followerNameArray = JSON.parse(this.response);
 
-        //!!!
-        console.log(followerNameArray);
+        //console.log(followerNameArray);
 
         for (let i = 0; i < followerNameArray.data.length; i++) {
           
