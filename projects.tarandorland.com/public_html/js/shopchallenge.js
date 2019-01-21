@@ -17,7 +17,7 @@ async function favouriteItem() {
     var p = document.getElementById(oldId);
 
     //Check the star
-    if (p.checked == true) {
+    if (p.checked == false) {
         p.checked = true;
 
         //Clone
