@@ -139,10 +139,10 @@
                 //Correcting for duplication 0 bug
                 $tmp = 0;
 
-                if ($i == 0) {
+                if ($j == 0) {
                     if ($stop == true) {
-                        $tmp = $i;
-                        $i = -1;
+                        $tmp = $j;
+                        $j = -1;
                     }
                     $stop = true;
                 }
@@ -168,7 +168,7 @@
             <?php endif;
 
                 //Correction
-                $i = $tmp;
+                $j = $tmp;
             }
         }
     }
