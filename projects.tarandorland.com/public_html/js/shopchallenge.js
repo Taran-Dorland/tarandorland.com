@@ -14,7 +14,7 @@ async function favouriteItem() {
     //Div
     var oldId = "r".concat(strId);
     //Star
-    var sOldId = "s".concat(strId);
+    var sOldId = "st".concat(strId);
 
     //Get element with correct ID
     var p = document.getElementById(oldId);
