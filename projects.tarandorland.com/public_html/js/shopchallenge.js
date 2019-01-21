@@ -11,10 +11,16 @@ async function favouriteItem() {
     var strId = currentLocation.substring(55);
 
     //Get correct id of element to clone
+    //Div
     var oldId = "r".concat(strId);
+    //Star
+    var sOldId = "s".concat(strId);
 
     //Get element with correct ID
     var p = document.getElementById(oldId);
+
+    //Star
+    var s = document.getElementById(sOldId);
 
     //Check the star
     if (p.checked == true) {
@@ -28,13 +34,13 @@ async function favouriteItem() {
         newElem.remove();
 
         //Change colour
-        p.style.color = "grey";
+        s.style.color = "grey";
 
     } else {
         p.checked = true;
 
         //Change colour
-        p.style.color = "green";
+        s.style.color = "green";
 
         //Clone
         var p_prime = p.cloneNode(true);
