@@ -30,11 +30,12 @@
                 <h2><u>Toronto Waste Lookup</u></h2>
 
                 <p>
-                    Description:
+                    Allow's the user to search through waste items using the Toronto Waste Wizard database, and save frequently used ones. <br>
+                    Good Examples: can, paper, bottle
                 </p>
 
                 <div><a class="btn-return" href="https://projects.tarandorland.com">Return to Project Directory</a></div>
-                <div><a href="https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000" target="_blank">JSON Data being used</a></div>
+                <div><a href="https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000" target="_blank">Data being used (JSON)</a></div>
                 <div><a href="#" target="_blank">Source Code</a></div>
                 
 
@@ -57,6 +58,23 @@
 
     <?php
     //-------------------------------------------------------------------------------------------------------------==
+    /*  By: Taran Dorland
+        Date: 1/20/2019
+        Created with: PHP, Javascript
+
+        Purpose: Fetches waste data from public api, allows user to search the data and it will return
+                 data (Title and information) based on keywords. User can also favourite each object returned
+                 which will be displayed with a green star next to them.
+
+        Known bugs/poor design decisions:
+            - Object 0 will be returned no matter what keyword was searched because of the data structure I used (Linked list),
+              and how I fetched and compared the data inside of it
+            - The search button is strictly php so every time the user enters a search their list of favourites disappears (Page reloads
+              itself because it uses an html form and php's $_POST), should have used JS
+            - Overall design (css) could look nicer
+            - Probably could have used more javascript to handle more of the client side tasks (searching, outputting)
+    */
+
     $json = file_get_contents("https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000");
     $obj = json_decode($json);
 
@@ -191,9 +209,3 @@
 
 </body>
 </html>
-
-<?php
-
-
-
-?>
