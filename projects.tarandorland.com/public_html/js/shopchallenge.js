@@ -27,7 +27,7 @@ async function favouriteItem() {
         //Add to html
         document.getElementById('favCon').appendChild(p_prime);
 
-    } else {
+    } else if (p.checked == true) {
         p.checked = false;
 
         //Delete this id
