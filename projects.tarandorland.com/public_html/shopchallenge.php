@@ -36,7 +36,7 @@
 
                 <div><a class="btn-return" href="https://projects.tarandorland.com">Return to Project Directory</a></div>
                 <div><a href="https://secure.toronto.ca/cc_sr_v1/data/swm_waste_wizard_APR?limit=1000" target="_blank">Data being used (JSON)</a></div>
-                <div><a href="#" target="_blank">Source Code</a></div>
+                <div><a href="https://github.com/Taran-Dorland/tarandorland.com/blob/master/projects.tarandorland.com/public_html/shopchallenge.php" target="_blank">Source Code</a></div>
                 
 
             </div>
