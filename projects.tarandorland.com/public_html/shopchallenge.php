@@ -136,17 +136,6 @@
                 $oot = $obj_out[$i] -> title;
                 $oob = $obj_out[$i] -> body;
 
-                //Correcting for duplication 0 bug
-                $tmp = 0;
-
-                if ($j == 0) {
-                    if ($stop == true) {
-                        $tmp = $j;
-                        $j = -1;
-                    }
-                    $stop = true;
-                }
-
                 //If the result matches a json object, output json data, decode body for html elements
                 //All html items are generated with an id corresponding to the id of the appropriate json obj
                 if ($i == $rrOut[$j]) : ?>
@@ -167,8 +156,6 @@
 
             <?php endif;
 
-                //Correction
-                $j = $tmp;
             }
         }
     }
