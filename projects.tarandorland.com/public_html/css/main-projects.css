@@ -7,6 +7,9 @@ div.wrapper-top {
     background-color: lightgray;
     width: 100%;
     height: 100%;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.main-container {
@@ -29,6 +32,15 @@ div.main-container-2 {
     overflow: hidden;
 }
 
+div.main-container-3 {
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 div.row-info {
     position: relative;
     width: auto;
@@ -47,6 +59,7 @@ div.search-bar {
     width: 80%;
     padding-left: 2%;
     padding-right: 2%;
+    margin-bottom: 1%;
 }
 
 div.btn-container {
@@ -91,6 +104,36 @@ div.twitch-player {
     padding-right: 5%;
 }
 
+div.wrapper-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.results {
+    width: 100%;
+    height: 100%;
+}
+
+div.star {
+    width: 5%;
+    height: 100%;
+    float: left;
+}
+
+div.title {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+div.body {
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+
 img.user-pic {
     width: 150px;
     height: 150px;
@@ -102,4 +145,7 @@ a.btn-return {
     position: relative;
 }
 
+a.favA {
+    color: grey;
+}
 

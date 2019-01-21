@@ -1,12 +1,4 @@
 
-
-//Client ID: x0w2s0l4ac6952e95t5pj4wg80rp13
-//curl -H Client-ID:x0w2s0l4ac6952e95t5pj4wg80rp13 -X GET https://api.twitch.tv/helix/streams?game_id=33214
-//curl -H Client-ID:x0w2s0l4ac6952e95t5pj4wg80rp13 -X GET https://api.twitch.tv/helix/streams?first=20
-//curl -H Client-ID:x0w2s0l4ac6952e95t5pj4wg80rp13 -X GET https://api.twitch.tv/helix/users?login=runtness
-//curl -H Authorization:45naeyfnm08hw21f2feka6ys1ofacc -X GET https://api.twitch.tv/helix/users?id=44322889
-
-
 //https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
 //https://www.w3schools.com/js/js_json_intro.asp
 //https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp
