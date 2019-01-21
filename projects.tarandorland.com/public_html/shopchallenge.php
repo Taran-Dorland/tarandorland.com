@@ -138,15 +138,11 @@
 
                 //If the result matches a json object, output json data, decode body for html elements
                 //All html items are generated with an id corresponding to the id of the appropriate json obj
-                if ($i == $rrOut[$j]) {
-
-                    if ($i == 0 && $stop == true) {
-                        return;
-                    } else {
-                        $stop = true;
-                    }
-                
-                ?>
+                if ($i == 0 && $stop == true) {
+                    return;
+                } else {
+                    $stop = true;
+                    if ($i == $rrOut[$j]) : ?>
 
                     <div id="r<?=$i?>" class="results">
                         <div id="s<?=$i?>" class="star">
@@ -162,7 +158,8 @@
                         </div>
                     </div>
 
-                <?php }
+            <?php endif;
+                }
 
             }
         }
