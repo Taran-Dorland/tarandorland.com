@@ -27,7 +27,7 @@
         <div class="main-container">
             <div class="row-info">
 
-                <h3><u>Toronto Waste Lookup</u></h3>
+                <h2><u>Toronto Waste Lookup</u></h2>
 
                 <p>
                     Description:
@@ -136,33 +136,42 @@
                 $oot = $obj_out[$i] -> title;
                 $oob = $obj_out[$i] -> body;
 
+                //Correcting for duplication 0 bug
+                $tmp = 0;
+
+                if ($i == 0) {
+                    if ($stop == true) {
+                        $tmp = $i;
+                        $i = -1;
+                    }
+                    $stop = true;
+                }
+
                 //If the result matches a json object, output json data, decode body for html elements
                 //All html items are generated with an id corresponding to the id of the appropriate json obj
-                if ($i == 0 && $stop == true) {
-                    return;
-                } else {
-                    $stop = true;
-                    if ($i == $rrOut[$j]) : ?>
+                if ($i == $rrOut[$j]) : ?>
 
-                        <div id="r<?=$i?>" class="results">
-                            <div id="s<?=$i?>" class="star">
-                                <a href="#id=<?=$i?>" id="st<?=$i?>" class="favA">
-                                    <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star" checked="false"></span>
-                                </a>
-                            </div>
-                            <div id="t<?=$i?>" class="title">
-                                <?=$oot = html_entity_decode($oot)?>
-                            </div>
-                            <div id="b<?=$i?>" class="body">
-                                <?=$oob = html_entity_decode($oob)?>
-                            </div>
+                    <div id="r<?=$i?>" class="results">
+                        <div id="s<?=$i?>" class="star">
+                            <a href="#id=<?=$i?>" id="st<?=$i?>" class="favA">
+                                <span id="sp<?=$i?>" onclick="favouriteItem()" class="fa fa-star" checked="false"></span>
+                            </a>
                         </div>
+                        <div id="t<?=$i?>" class="title">
+                            <?=$oot = html_entity_decode($oot)?>
+                        </div>
+                        <div id="b<?=$i?>" class="body">
+                            <?=$oob = html_entity_decode($oob)?>
+                        </div>
+                    </div>
 
-                    <?php endif;
-                    }
-                }
+            <?php endif;
+
+                //Correction
+                $i = $tmp;
             }
         }
+    }
     ?>
         </div>
 
