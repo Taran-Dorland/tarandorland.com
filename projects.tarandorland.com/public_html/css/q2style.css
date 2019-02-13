@@ -1,0 +1,90 @@
+
+h1 {
+    font-family: 'Titillium Web', sans-serif, arial;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif, arial;
+}
+
+h3 {
+    font-family: 'Titillium Web', sans-serif, arial;
+}
+
+li.tier2 {
+    list-style-type: lower-roman;
+}
+
+a.tier1 {
+    color: purple
+}
+
+a.tier2 {
+    color: green;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+h2 + p::first-letter{
+    color: #903;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-style: normal;
+}
+
+p sup.reference a:hover {
+    color: olive;
+}
+
+sup.reference a:hover {
+    color: teal;
+}
+
+table {
+    border: solid;
+    border-color: grey;
+}
+
+td:first-of-type {
+    font-style: italic;
+}
+
+tr:nth-child(even) {
+    background-color: #e0f5ff;
+}
+
+a[href$=".pdf"] {
+    color: purple;
+}
+
+a[href$=".pdf"]::after {
+    content: url('../img/pdf16.png');
+    color: purple;
+    vertical-align: super;
+    font-size: smaller;
+}
+
+a[href*="q2"] {
+    color: #4d6c92;
+}
+
+a {
+    color: #508658;
+}
+
+#references {
+    column-count: auto;
+    column-width: 15em;
+    column-gap: 2em;
+}
+
+cite {
+    font-size: 0.8em;
+}

@@ -1,0 +1,75 @@
+
+
+td {
+
+}
+
+td.timeBlock {
+
+}
+
+td.classBlock {
+
+    background-color: #d3e2e7;
+    width: 100px;
+}
+
+td.classBlockTop {
+    background-color: #d3e2e7;
+    width: 100px;
+    height: 90px;
+    border-top: unset;
+}
+
+td.classBlockBottom {
+    background-color: #d3e2e7;
+    width: 100px;
+    border-bottom: unset;
+}
+
+td.classBlockRight {
+    background-color: #d3e2e7;
+    width: 100px;
+    border-left: unset;
+}
+
+td.classBlockLeft {
+    background-color: #d3e2e7;
+    width: 100px;
+    border-right: unset;
+}
+
+td.classBlockMid {
+    background-color: #d3e2e7;
+    width: 100px;
+    border-left: unset;
+    border-right: unset;
+}
+
+td.dayBlock {
+    font-size: 12pt;
+}
+
+p.classInfo {
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #d3e2e7;
+    text-align: center;
+}
+
+p.classInfoTop {
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #d3e2e7;
+    display: block;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+p.classInfoMid {
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #d3e2e7;
+    text-align: center;
+}
