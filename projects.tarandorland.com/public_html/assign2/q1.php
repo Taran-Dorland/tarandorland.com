@@ -74,10 +74,9 @@
     //Change values here to change the size of the multiplication table
     define('RANGE', array(1, 10));
 
-    echo "Min: " . RANGE[0] . " Max: " . RANGE[1];
     ?>
     <table>
-    <caption>Multiplication Table</caption>
+    <caption>Multiplication Table (Min: <?=RANGE[0]?> Max: <?=RANGE[1]?>)</caption>
     <?php
 
     //Generate col headers
