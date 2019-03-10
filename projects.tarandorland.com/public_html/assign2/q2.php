@@ -51,7 +51,7 @@
             <!-- Question info here, output question answers below -->
             <h4><?=$_SESSION['question']?>. <?=$questions[$_SESSION['question'] - 1]?></h4>
             <ul>
-                <li><input type="radio" name="group1" value="<?=$answers[0]?>" required><label><?=$answers[0]?></label>
+                <li><input type="radio" name="group1" value="<?=$answers[0]?>"><label><?=$answers[0]?></label>
                 <li><input type="radio" name="group1" value="<?=$answers[1]?>"><label><?=$answers[1]?></label>
                 <li><input type="radio" name="group1" value="<?=$answers[2]?>"><label><?=$answers[2]?></label>
                 <li><input type="radio" name="group1" value="<?=$answers[3]?>"><label><?=$answers[3]?></label>
