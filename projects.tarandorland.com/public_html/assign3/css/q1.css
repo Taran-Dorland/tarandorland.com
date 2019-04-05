@@ -1,22 +1,19 @@
-li.main {
-    margin-top: 2em;
-}
 
-#p5div {
+div {
     height: 5em;
     width: 5em;
 
     background-color: lightgray;
 }
 
-#p8div {
+div:nth-child(1) {
     height: 10em;
     width: 10em;
 
     background-color: lightgray;
 }
 
-#p6img {
+img {
     height: 15em;
     width: 10em;
 }
