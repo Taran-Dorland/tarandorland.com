@@ -16,7 +16,10 @@
 
         <?php
 
-        echo "TEST123";
+        echo "TEST123 ";
+        echo $title . " ";
+
+        var_dump(substr(sprintf('%o', fileperms('/include/libs.php')), -4));
         ?>
 
 
