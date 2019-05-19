@@ -6,15 +6,13 @@
 
 
     $title = "Index";
-    include($_SERVER['DOCUMENT_ROOT']."/includes/header.php");
+    include '/Includes/header.php';
 ?>
 
 <body>
     <main>
 
-        <?php
-        include($_SERVER['DOCUMENT_ROOT']."/includes/nav.php");
-        ?>
+        <?php include '/Includes/nav.php'; ?>
 
         <?php
 
@@ -24,9 +22,7 @@
 
     </main>
 
-    <?php
-    include($_SERVER['DOCUMENT_ROOT']."/includes/libraries.php");
-    ?>
+    <?php include '/Includes/libraries.php'; ?>
 
     <!-- Custom JS -->
     <script src="includes/js/index.js"></script>
