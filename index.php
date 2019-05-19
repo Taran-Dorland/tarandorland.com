@@ -12,12 +12,12 @@
 <body>
     <main>
 
-        <?php include 'nav.php'; ?>
+        <?php include 'includes/nav.php'; ?>
 
 
     </main>
 
-    <?php include 'libraries.php'; ?>
+    <?php include 'includes/libraries.php'; ?>
 
     <!-- Custom JS -->
     <script src="includes/js/index.js"></script>
