@@ -6,7 +6,7 @@
 
 
     $title = "Index";
-    include '/Includes/header.php';
+    include 'header.php';
 ?>
 
 <body>
