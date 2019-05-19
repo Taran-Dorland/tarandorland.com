@@ -15,7 +15,7 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-fighter-jet"></i> Something1</a>
+                <a class="nav-link" href="https://projects.tarandorland.com/"><i class="fas fa-fighter-jet"></i> Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-radiation"></i> Something2</a>
