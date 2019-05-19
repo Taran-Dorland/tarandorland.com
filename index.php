@@ -6,13 +6,13 @@
 
 
     $title = "Index";
-    include 'includes/header.php';
+    include '/includes/header.php';
 ?>
 
 <body>
     <main>
 
-        <?php include 'includes/nav.php'; ?>
+        <?php include '/includes/nav.php'; ?>
 
         <?php
 
@@ -22,7 +22,7 @@
 
     </main>
 
-    <?php include 'includes/libraries.php'; ?>
+    <?php include '/includes/libraries.php'; ?>
 
     <!-- Custom JS -->
     <script src="includes/js/index.js"></script>
