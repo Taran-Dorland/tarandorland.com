@@ -11,13 +11,13 @@
     <title>Shopify Challenge</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
-    <link href="css/main-projects.css" rel="stylesheet">
+    <link href="includes/css/main-projects.css" rel="stylesheet">
     
 </head>
 
@@ -201,16 +201,16 @@
     </div>
 
     <!-- Jquery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="includes/js/jquery.min.js"></script>
 
     <!-- Popper -->
-    <script src="js/popper.min.js"></script>
+    <script src="includes/js/popper.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="includes/js/bootstrap.min.js"></script>
 
     <!-- Custom Javascript -->
-    <script src="js/shopchallenge.js"></script>
+    <script src="includes/js/shopchallenge.js"></script>
 
 </body>
 </html>
