@@ -72,7 +72,7 @@
 
     </main>
 
-    <?php include '../../includes/libraries.php'; ?>
+    <?php include 'includes/libraries.php'; ?>
 
     <!-- Custom JS -->
     <script src="includes/js/projectIndex.js"></script>
