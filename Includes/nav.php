@@ -18,7 +18,7 @@
                 <a class="nav-link" href="https://projects.tarandorland.com/"><i class="fas fa-fighter-jet"></i> Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-radiation"></i> Something2</a>
+                <a class="nav-link" href="wfbuilder/main.php"><i class="fas fa-radiation"></i> wfbuilder</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-dragon"></i> Something3</a>

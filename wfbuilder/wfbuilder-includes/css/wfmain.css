@@ -1,0 +1,28 @@
+/*
+    -----------------------------------------------------------------
+    Main page styling
+
+*/
+
+div.page-background {
+    background-color: lightgray;
+}
+
+div.page-wrapper {
+    background-color: gray;
+}
+
+img.frame-img {
+    width: 70px;
+    height: 50px;
+
+    opacity: 0.5;
+}
+
+img.frame-img:hover {
+    opacity: 1;
+}
+
+span.frame-name {
+    font-size: 8pt;
+}
