@@ -15,10 +15,7 @@
     <title><?=$title?></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="wfbuilder-includes/css/wfmain.css" rel="stylesheet">
+    <link href="../../node_modules/bootstrap/dist/css/dark-bootstrap/bootstrap.min.css" rel="stylesheet">
 
 </head>
 

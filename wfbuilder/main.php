@@ -10,6 +10,10 @@
 ?>
 
 <body>
+
+    <!-- Custom CSS -->
+    <link href="wfbuilder-includes/css/wfmain.css" rel="stylesheet">
+
     <main>
 
         <div class="page-background">
