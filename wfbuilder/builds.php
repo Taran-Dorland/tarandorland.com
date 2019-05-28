@@ -11,6 +11,9 @@
 
 <body>
 
+    <!-- Bootstrap-select CSS -->
+    <link href="../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
 
     <main>
@@ -56,6 +59,10 @@
 
     <?php include 'wfbuilder-includes/libraries.php'; ?>
 
+    <!-- Boostrap-select -->
+    <script src="../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
     <!-- Custom JS -->
+    <script src="wfbuilder-includes/js/filterbuilds.js"></script>
 
 </body>
