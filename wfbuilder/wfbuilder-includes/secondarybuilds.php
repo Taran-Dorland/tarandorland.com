@@ -21,11 +21,12 @@
                     <div class="row">
                         <h2 class="col-lg-12">Secondary Weapon Builds</h2>
                     </div>
-                    <form id="filterFrameForm">
+                    <form id="filterFrameForm" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputBuildName">Build Name</label>
                                 <input type="text" class="form-control bg-light text-white" id="inputBuildName" placeholder="Name">
+                                <input type="text" class="d-none" name="buildtype" value="Secondary Weapon" readonly>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputAuthor">Author</label>
@@ -78,13 +79,32 @@
                                 <label for="inputMissionType" class="col-md-12">Mission Type</label>
                                 <select id="inputMissionType" class="selectpicker col-md-12" data-live-search="true">
                                     <option selected>Any</option>
-                                    <option>Arena</option>
-                                    <option>Assassination</option>
-                                    <option>Assault</option>
-                                    <option>Capture</option>
-                                    <option>Defection</option>
-                                    <option>Defense</option>
-                                    <option>Disruption</option>
+                                    <optgroup label="Regular">
+                                        <option>Arena</option>
+                                        <option>Assassination</option>
+                                        <option>Assault</option>
+                                        <option>Capture</option>
+                                        <option>Defection</option>
+                                        <option>Defense</option>
+                                        <option>Disruption</option>
+                                        <option>Excavation</option>
+                                        <option>Exterminate</option>
+                                        <option>Free Roam/Bounty</option>
+                                        <option>Hijack</option>
+                                        <option>Infested Salvage</option>
+                                        <option>Interception</option>
+                                        <option>Junction</option>
+                                        <option>Mobile Defense</option>
+                                        <option>Rescue</option>
+                                        <option>Sabotage</option>
+                                        <option>Sanctuary Onslaught</option>
+                                        <option>Spy</option>
+                                        <option>Survival</option>
+                                    </optgroup>
+                                    <optgroup label="Archwing">
+                                        <option>Pursuit</option>
+                                        <option>Rush</option>
+                                    </optgroup>
                                 </select>
                             </div>
                             <div class="form-group col-md-4">

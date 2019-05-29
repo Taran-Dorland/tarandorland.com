@@ -39,21 +39,23 @@
         </ul>
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active show" id="frames">
-                <?php include 'framebuilds.php'; ?>
+                <?php include 'wfbuilder-includes/framebuilds.php'; ?>
             </div>
             <div class="tab-pane fade" id="primary">
-                <?php include 'primarybuilds.php'; ?>
+                <?php include 'wfbuilder-includes/primarybuilds.php'; ?>
             </div>
             <div class="tab-pane fade" id="secondary">
-                <?php include 'secondarybuilds.php'; ?>
+                <?php include 'wfbuilder-includes/secondarybuilds.php'; ?>
             </div>
             <div class="tab-pane fade" id="melee">
-                <?php include 'meleebuilds.php'; ?>
+                <?php include 'wfbuilder-includes/meleebuilds.php'; ?>
             </div>
             <div class="tab-pane fade" id="companions">
-                <?php include 'companionbuilds.php'; ?>
+                <?php include 'wfbuilder-includes/companionbuilds.php'; ?>
             </div>
         </div>
+
+        <?php include 'wfbuilder-includes/buildlist.php'; ?>
 
     </main>
 

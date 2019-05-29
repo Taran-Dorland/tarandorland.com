@@ -21,11 +21,12 @@
                     <div class="row">
                         <h2 class="col-lg-12">Companion Builds</h2>
                     </div>
-                    <form id="filterFrameForm">
+                    <form id="filterFrameForm" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputBuildName">Build Name</label>
                                 <input type="text" class="form-control" id="inputBuildName" placeholder="Name">
+                                <input type="text" class="d-none" name="buildtype" value="Companion" readonly>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputAuthor">Author</label>
