@@ -64,7 +64,7 @@
                                 <select id="inputContains" class="selectpicker col-md-12" multiple data-live-search="true">
 
                                     <?php foreach ($result as $row => $mod) : ?>
-                                    <option data-toggle="tooltip" title="<?=$mod['Mod_Desc']?>" data-placement="right"><?=$mod['Mod_Name']?></option>
+                                    <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 
                                 </select>
@@ -74,7 +74,7 @@
                                 <select id="inputDoesntContain" class="selectpicker col-md-12" multiple data-live-search="true">
                                     
                                     <?php foreach ($result as $row => $mod) : ?>
-                                    <option data-toggle="tooltip" title="<?=$mod['Mod_Desc']?>" data-placement="right"><?=$mod['Mod_Name']?></option>
+                                    <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 
                                 </select>
