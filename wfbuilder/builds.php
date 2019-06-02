@@ -1,8 +1,8 @@
 <?php
 
+    include 'wfbuilder-includes/dblib.php';
 
-
-
+    $pdo = & dbconnect();
 
 
     $title = "Builds";
