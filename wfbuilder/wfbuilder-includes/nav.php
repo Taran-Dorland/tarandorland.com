@@ -32,7 +32,7 @@
                 <a class="nav-link" href="newbuild.php">Create a Build</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="load-data.php">Mod List</a>
+                <a class="nav-link" href="#">Mod List</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Arcane List</a>
