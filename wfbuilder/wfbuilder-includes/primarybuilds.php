@@ -1,10 +1,10 @@
 <?php
 
+    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=? OR Mod_Category=? OR Mod_Category=? ORDER BY Mod_Category ASC;";
+    $stmt = $pdo -> prepare($sql);
+    $stmt -> execute(["Primary", "Rifle", "Shotgun"]);
 
-
-
-
-
+    $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -60,17 +60,21 @@
                             <div class="form-group col-md-6">
                                 <label for="inputContains" class="col-md-12">Contains</label>
                                 <select id="inputContains" class="selectpicker col-md-12" multiple data-live-search="true">
-                                    <option>Test1</option>
-                                    <option>ABC</option>
-                                    <option>123</option>
+                                    
+                                    <?php foreach ($result as $row => $mod) : ?>
+                                    <option><?=$mod['Mod_Name']?></option>
+                                    <?php endforeach; ?>
+
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputDoesntContain" class="col-md-12">Doesn't Contain</label>
                                 <select id="inputDoesntContain" class="selectpicker col-md-12" multiple data-live-search="true">
-                                    <option>Test1</option>
-                                    <option>ABC</option>
-                                    <option>123</option>
+                                    
+                                    <?php foreach ($result as $row => $mod) : ?>
+                                    <option><?=$mod['Mod_Name']?></option>
+                                    <?php endforeach; ?>
+
                                 </select>
                             </div>
                         </div>
