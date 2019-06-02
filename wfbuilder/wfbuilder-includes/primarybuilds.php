@@ -1,6 +1,6 @@
 <?php
 
-    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=? OR Mod_Category=? OR Mod_Category=? ORDER BY Mod_Category ASC;";
+    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=? OR Mod_Category=? OR Mod_Category=?;";
     $stmt = $pdo -> prepare($sql);
     $stmt -> execute(["Primary", "Rifle", "Shotgun"]);
 
