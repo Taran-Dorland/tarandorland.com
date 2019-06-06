@@ -94,13 +94,13 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputSecondary" class="col-md-12">Secondary Weapon</label>
-                                <select id="inputSecondary" class="selectpicker col-md-12">
+                                <select id="inputSecondary" class="selectpicker col-md-12" data-live-search="true">
                                     <option selected>Any</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputMelee" class="col-md-12">Melee Weapon</label>
-                                <select id="inputMelee" class="selectpicker col-md-12">
+                                <select id="inputMelee" class="selectpicker col-md-12" data-live-search="true">
                                     <option selected>Any</option>
                                 </select>
                             </div>
