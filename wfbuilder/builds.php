@@ -4,7 +4,14 @@
 
     $pdo = & dbconnect();
 
+    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=?;";
+    $stmt = $pdo -> prepare($sql);
+    $stmt -> execute(["Warframe"]);
 
+    $ModResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+
+
+    
     $title = "Builds";
     include 'wfbuilder-includes/header.php';
 ?>

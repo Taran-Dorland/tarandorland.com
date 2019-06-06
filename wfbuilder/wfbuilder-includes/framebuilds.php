@@ -1,10 +1,10 @@
 <?php
 
-    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=?;";
+    $sql = "SELECT Name FROM wf_frames;";
     $stmt = $pdo -> prepare($sql);
-    $stmt -> execute(["Warframe"]);
+    $stmt -> execute();
 
-    $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+    $FrameResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -38,6 +38,11 @@
                                 <label for="inputFrame" class="col-md-12">Warframe</label>
                                 <select id="inputFrame" class="selectpicker col-md-12">
                                     <option selected>Any</option>
+
+                                    <?php foreach ($FrameResults as $row => $frame) : ?>
+                                    <option><?=$frame['Name']?></option>
+                                    <?php endforeach; ?>
+
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
@@ -63,7 +68,7 @@
                                 <label for="inputContains" class="col-md-12">Contains</label>
                                 <select id="inputContains" class="selectpicker col-md-12" multiple data-live-search="true">
 
-                                    <?php foreach ($result as $row => $mod) : ?>
+                                    <?php foreach ($ModResults as $row => $mod) : ?>
                                     <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 
@@ -73,7 +78,7 @@
                                 <label for="inputDoesntContain" class="col-md-12">Doesn't Contain</label>
                                 <select id="inputDoesntContain" class="selectpicker col-md-12" multiple data-live-search="true">
                                     
-                                    <?php foreach ($result as $row => $mod) : ?>
+                                    <?php foreach ($ModResults as $row => $mod) : ?>
                                     <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 
