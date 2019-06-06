@@ -20,13 +20,9 @@
 
         if (isset($val['wikiaThumbnail'])) {
             print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
-        } else {
+        } else if (!isset($val['thumbNail'])) {
             print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaUrl'] . "<br>");
-        }
-
-        if (isset($val['aura'])) {
-            print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
-        } else {
+        } else if (!isset($val['aura'])) {
             print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
         }
 
