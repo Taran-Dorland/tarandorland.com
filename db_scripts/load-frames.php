@@ -18,25 +18,25 @@
         if (isset($val['wikiaThumbnail']) && isset($val['aura'])) {
             $sql = "INSERT INTO wf_frames(Name, Armour, Energy, Health, Shield, Sprint_Speed, Passive_Desc, Aura_Polarity, Polarities, Wiki_Thumb, Wiki_Url) VALUES(?,?,?,?,?,?,?,?,?,?,?);";
             $stmt = $pdo -> prepare($sql);
-            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintspeed'], $val['passivedescription'], $val['aura'], $polarities, $val['wikiaThumbnail'], $val['wikiaUrl']]);
+            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintSpeed'], $val['passiveDescription'], $val['aura'], $polarities, $val['wikiaThumbnail'], $val['wikiaUrl']]);
 
         //Frame contains aura
         } else if (!isset($val['wikiaThumbnail'])) {
             $sql = "INSERT INTO wf_frames(Name, Armour, Energy, Health, Shield, Sprint_Speed, Passive_Desc, Aura_Polarity, Polarities,  Wiki_Url) VALUES(?,?,?,?,?,?,?,?,?,?);";
             $stmt = $pdo -> prepare($sql);
-            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintspeed'], $val['passivedescription'], $val['aura'], $polarities, $val['wikiaUrl']]);
+            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintSpeed'], $val['passiveDescription'], $val['aura'], $polarities, $val['wikiaUrl']]);
 
         //Frame contains thumbnail
         } else if (!isset($val['aura'])) {
             $sql = "INSERT INTO wf_frames(Name, Armour, Energy, Health, Shield, Sprint_Speed, Passive_Desc, Polarities, Wiki_Thumb, Wiki_Url) VALUES(?,?,?,?,?,?,?,?,?,?);";
             $stmt = $pdo -> prepare($sql);
-            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintspeed'], $val['passivedescription'], $polarities, $val['wikiaThumbnail'], $val['wikiaUrl']]);
+            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintSpeed'], $val['passiveDescription'], $polarities, $val['wikiaThumbnail'], $val['wikiaUrl']]);
 
         //Frames contains neither thumbnail or aura
         } else if (!isset($val['aura']) && !isset($val['wikiaThumbnail'])) {
             $sql = "INSERT INTO wf_frames(Name, Armour, Energy, Health, Shield, Sprint_Speed, Passive_Desc, Polarities, Wiki_Url) VALUES(?,?,?,?,?,?,?,?,?);";
             $stmt = $pdo -> prepare($sql);
-            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintspeed'], $val['passivedescription'], $polarities, $val['wikiaUrl']]);
+            $stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintSpeed'], $val['passiveDescription'], $polarities, $val['wikiaUrl']]);
         }
 
     }
