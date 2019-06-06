@@ -12,7 +12,7 @@
 
     foreach ($obj as $key => $val) {
 
-        print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintspeed'] . $val['passivedescription'] . $val['aura'] . $val['polarities'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
+        print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['polarities'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
 
         //$stmt = $pdo -> prepare($sql);
         //$stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintspeed'], $val['passivedescription'], $val['aura'], $val['polarities'], $val['wikiaThumbnail'], $val['wikiaUrl']]);
