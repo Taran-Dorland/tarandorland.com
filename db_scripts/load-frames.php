@@ -12,13 +12,13 @@
 
     foreach ($obj as $key => $val) {
 
-        if (isset($val['wikiaThumbnail'])) {
+        if (isset($val['wikiaThumbnail']) && isset($val['aura'])) {
             print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
         } else if (!isset($val['wikiaThumbnail'])) {
             print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaUrl'] . "<br>");
         } else if (!isset($val['aura'])) {
             print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
-        } else if (!isset($val['wikiaThumbnail']) && !isset($val['aura'])) {
+        } else if (!isset($val['aura']) && !isset($val['wikiaThumbnail'])) {
             print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['wikiaUrl'] . "<br>");
         }
 
