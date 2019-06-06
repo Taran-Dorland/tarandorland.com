@@ -3,7 +3,7 @@
     $JSON = file_get_contents("../node_modules/warframe-items/data/json/Mods.json");
     $obj = json_decode($JSON, TRUE);
 
-    //include 'wfbuilder/wfbuilder-includes/dblib.php';
+    //include '../wfbuilder/wfbuilder-includes/dblib.php';
 
     //$pdo = & dbconnect();
 
