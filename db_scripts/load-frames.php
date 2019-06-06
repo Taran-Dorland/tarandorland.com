@@ -16,6 +16,10 @@
 
         print_r(isset($val['aura']));
 
+        print_r(array_key_exists('aura', $val));
+
+        echo "<br>";
+
 
 
         // foreach ($val['polarities'] as $polarity) {
