@@ -19,8 +19,14 @@
             $dmgTypes = implode(",", $val['damageTypes']);
         }
 
-        print_r($val['name'] . $val['type'] . $val['magazineSize'] . $val['reloadTime'] . $val['ammo'] . $val['totalDamage'] . $dmgTypes . $val['damagePerSecond'] . $val['accuracy'] . $val['criticalChance'] . $val['criticalMultiplier'] . $val['procChance'] . "<br>");
+        if (isset($val['ammo'])) {
+            print_r($val['name'] . $val['type'] . $val['magazineSize'] . $val['reloadTime'] . $val['ammo'] . $val['totalDamage'] . $dmgTypes . $val['damagePerSecond'] . $val['accuracy'] . $val['criticalChance'] . $val['criticalMultiplier'] . $val['procChance'] . "<br>");
+        } else {
+            print_r($val['name'] . $val['type'] . $val['magazineSize'] . $val['reloadTime'] . $val['totalDamage'] . $dmgTypes . $val['damagePerSecond'] . $val['accuracy'] . $val['criticalChance'] . $val['criticalMultiplier'] . $val['procChance'] . "<br>");
+        }
+        
         echo $polarities . "<br>";
+        echo $val['damage'] . "<br>";
 
     }
 
