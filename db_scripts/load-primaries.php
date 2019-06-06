@@ -1,6 +1,6 @@
 <?php
 
-    $JSON = file_get_contents("../node_modules/warframe-items/data/json/Warframes.json");
+    $JSON = file_get_contents("../node_modules/warframe-items/data/json/Primary.json");
     $obj = json_decode($JSON, TRUE);
 
     //include '../wfbuilder/wfbuilder-includes/dblib.php';
