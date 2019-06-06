@@ -3,6 +3,7 @@
     //Boostrap Dark Theme
     //https://bootswatch.com/darkly/
     //https://developer.snapappointments.com/bootstrap-select/
+    //https://github.com/WFCD/warframe-items
 
 
 
