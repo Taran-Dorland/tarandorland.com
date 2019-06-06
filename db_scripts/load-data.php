@@ -4,9 +4,7 @@
     $obj = json_decode($JSON, TRUE);
 
     //include '../wfbuilder/wfbuilder-includes/dblib.php';
-
     //$pdo = & dbconnect();
-
     //$sql = "INSERT INTO wf_mods(Mod_Category, Mod_Name, Mod_Desc, Mod_Polarity, Mod_Base, Mod_Limit, Mod_Rarity, Mod_Image) VALUES (?,?,?,?,?,?,?,?)";
 
     $_MODNAME;
