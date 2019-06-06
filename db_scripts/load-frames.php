@@ -14,7 +14,7 @@
 
         // print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
 
-        print_r(array_key_exists("aura", $val));
+        print_r(isset($val['aura']));
 
 
 
