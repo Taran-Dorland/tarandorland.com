@@ -12,14 +12,18 @@
 
     foreach ($obj as $key => $val) {
 
-        print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
+        // print_r($val['name'] . $val['armor'] . $val['power'] . $val['health'] . $val['shield'] . $val['sprintSpeed'] . $val['passiveDescription'] . $val['aura'] . $val['wikiaThumbnail'] . $val['wikiaUrl'] . "<br>");
 
-        foreach ($val['polarities'] as $polarity) {
+        print_r(array_key_exists("aura", $val));
 
-            print_r($polarity . " ");
-        }
 
-        echo "<br>";
+
+        // foreach ($val['polarities'] as $polarity) {
+
+        //     print_r($polarity . " ");
+        // }
+
+        // echo "<br>";
 
         //$stmt = $pdo -> prepare($sql);
         //$stmt -> execute([$val['name'], $val['armor'], $val['power'], $val['health'], $val['shield'], $val['sprintspeed'], $val['passivedescription'], $val['aura'], $val['polarities'], $val['wikiaThumbnail'], $val['wikiaUrl']]);
