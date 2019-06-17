@@ -3,12 +3,13 @@
     $JSON = file_get_contents("../node_modules/warframe-items/data/json/Primary.json");
     $obj = json_decode($JSON, TRUE);
 
-    include '../wfbuilder/wfbuilder-includes/dblib.php';
-    $pdo = & dbconnect();
-    $sql = "";
+    //include '../wfbuilder/wfbuilder-includes/dblib.php';
+    //$pdo = & dbconnect();
+    //$sql = "";
 
     foreach ($obj as $key => $val) {
 
+        //Fits all polarities into a col
         $polarities = "";
         if (isset($val['polarities'])) {
             $polarities = implode(",", $val['polarities']);
@@ -17,6 +18,7 @@
         $dmgTypes = "";
         if (isset($val['damageTypes'])) {
 
+            //Fit all the damage types with their names and damage into a col
             $array = array();
             foreach ($val['damageTypes'] as $k => $v) {
 
@@ -27,6 +29,7 @@
             $dmgTypes = implode(",", $array);
         }
 
+        //SQL queries setup to avoid errors
         if (isset($val['ammo']) && isset($val['damage'])) {
             $sql = "INSERT INTO wf_primary_weapons(Name, Type, Mag_Size, Reload_Time, Max_Ammo, Damage, Damage_Type, Fire_Rate, Dps, Accuracy, Crit_Chance, Crit_Mult, Status_Chance, Polarities) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
             $stmt = $pdo -> prepare($sql);
