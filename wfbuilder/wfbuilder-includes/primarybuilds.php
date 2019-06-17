@@ -1,12 +1,12 @@
 <?php
 
-    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=? OR Mod_Category=? OR Mod_Category=?;";
+    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=? OR Mod_Category=? OR Mod_Category=? OR Mod_Category=? OR Mod_Category=? OR Mod_Category=? OR Mod_Category=? OR Mod_Category=?;";
     $stmt = $pdo -> prepare($sql);
-    $stmt -> execute(["Primary", "Rifle", "Shotgun"]);
+    $stmt -> execute(["Primary", "Rifle", "Shotgun", "Sniper Rifle", "Speargun", "Bow", "Crossbow", "Launcher"]);
 
-    $ModResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+    $PrimaryModResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
-
+    
 ?>
 
 <body>
@@ -38,6 +38,11 @@
                                 <label for="inputPrimary" class="col-md-12">Primary Weapon</label>
                                 <select id="inputPrimary" class="selectpicker col-md-12" data-live-search="true">
                                     <option selected>Any</option>
+
+                                    <?php foreach ($PrimaryResults as $row => $primary) : ?>
+                                    <option><?=$primary['Name']?></option>
+                                    <?php endforeach; ?>
+
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
@@ -61,7 +66,7 @@
                                 <label for="inputContains" class="col-md-12">Contains</label>
                                 <select id="inputContains" class="selectpicker col-md-12" multiple data-live-search="true">
                                     
-                                    <?php foreach ($ModResults as $row => $mod) : ?>
+                                    <?php foreach ($PrimaryModResults as $row => $mod) : ?>
                                     <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 
@@ -71,7 +76,7 @@
                                 <label for="inputDoesntContain" class="col-md-12">Doesn't Contain</label>
                                 <select id="inputDoesntContain" class="selectpicker col-md-12" multiple data-live-search="true">
                                     
-                                    <?php foreach ($ModResults as $row => $mod) : ?>
+                                    <?php foreach ($PrimaryModResults as $row => $mod) : ?>
                                     <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 

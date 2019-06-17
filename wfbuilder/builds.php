@@ -4,12 +4,11 @@
 
     $pdo = & dbconnect();
 
-    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=?;";
+    $sql = "SELECT Name FROM wf_primary_weapons;";
     $stmt = $pdo -> prepare($sql);
-    $stmt -> execute(["Warframe"]);
+    $stmt -> execute();
 
-    $ModResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-
+    $PrimaryResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
     
     $title = "Builds";

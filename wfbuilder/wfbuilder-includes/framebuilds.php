@@ -1,5 +1,12 @@
 <?php
 
+    $sql = "SELECT Mod_Name, Mod_Desc FROM wf_mods WHERE Mod_Category=?;";
+    $stmt = $pdo -> prepare($sql);
+    $stmt -> execute(["Warframe"]);
+
+    $FrameModResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+
+
     $sql = "SELECT Name FROM wf_frames;";
     $stmt = $pdo -> prepare($sql);
     $stmt -> execute();
@@ -68,7 +75,7 @@
                                 <label for="inputContains" class="col-md-12">Contains</label>
                                 <select id="inputContains" class="selectpicker col-md-12" multiple data-live-search="true">
 
-                                    <?php foreach ($ModResults as $row => $mod) : ?>
+                                    <?php foreach ($FrameModResults as $row => $mod) : ?>
                                     <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 
@@ -78,7 +85,7 @@
                                 <label for="inputDoesntContain" class="col-md-12">Doesn't Contain</label>
                                 <select id="inputDoesntContain" class="selectpicker col-md-12" multiple data-live-search="true">
                                     
-                                    <?php foreach ($ModResults as $row => $mod) : ?>
+                                    <?php foreach ($FrameModResults as $row => $mod) : ?>
                                     <option><?=$mod['Mod_Name']?></option>
                                     <?php endforeach; ?>
 
@@ -90,6 +97,11 @@
                                 <label for="inputPrimary" class="col-md-12">Primary Weapon</label>
                                 <select id="inputPrimary" class="selectpicker col-md-12" data-live-search="true">
                                     <option selected>Any</option>
+
+                                    <?php foreach ($PrimaryResults as $row => $primary) : ?>
+                                    <option><?=$frame['Name']?></option>
+                                    <?php endforeach; ?>
+
                                 </select>
                             </div>
                             <div class="form-group col-md-4">
