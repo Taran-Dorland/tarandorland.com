@@ -16,7 +16,15 @@
 
         $dmgTypes = "";
         if (isset($val['damageTypes'])) {
-            $dmgTypes = implode(",", $val['damageTypes']);
+
+            $array = array();
+            foreach ($val['damageTypes'] as $k => $v) {
+
+                $element = $k . ":" . $v;
+                array_push($array, $element);
+            }
+
+            $dmgTypes = implode(",", $array);
         }
 
         if (isset($val['ammo']) && isset($val['damage'])) {
