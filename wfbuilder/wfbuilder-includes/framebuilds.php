@@ -28,6 +28,7 @@
                     <div class="row">
                         <h2 class="col-lg-12">Frame Builds</h2>
                     </div>
+                    
                     <form id="filterFrameForm" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -99,7 +100,7 @@
                                     <option selected>Any</option>
 
                                     <?php foreach ($PrimaryResults as $row => $primary) : ?>
-                                    <option><?=$frame['Name']?></option>
+                                    <option><?=$primary['Name']?></option>
                                     <?php endforeach; ?>
 
                                 </select>

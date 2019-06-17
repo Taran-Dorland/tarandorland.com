@@ -6,7 +6,7 @@
 
     $PrimaryModResults = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
-    
+
 ?>
 
 <body>
@@ -21,7 +21,8 @@
                     <div class="row">
                         <h2 class="col-lg-12">Primary Weapon Builds</h2>
                     </div>
-                    <form id="filterFrameForm" method="get">
+
+                    <form id="filterPrimaryForm" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputBuildName">Build Name</label>
