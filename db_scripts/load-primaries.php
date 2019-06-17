@@ -19,9 +19,13 @@
             $dmgTypes = implode(",", $val['damageTypes']);
         }
 
-        if (isset($val['ammo'])) {
+        if (isset($val['ammo']) && isset($val['damage'])) {
+            print_r($val['name'] . $val['type'] . $val['magazineSize'] . $val['reloadTime'] . $val['ammo'] . $val['totalDamage'] . $val['damage'] . $dmgTypes . $val['damagePerSecond'] . $val['accuracy'] . $val['criticalChance'] . $val['criticalMultiplier'] . $val['procChance'] . "<br>");
+        } else if (!isset($val['ammo'])) {
+            print_r($val['name'] . $val['type'] . $val['magazineSize'] . $val['reloadTime'] . $val['totalDamage'] . $val['damage'] . $dmgTypes . $val['damagePerSecond'] . $val['accuracy'] . $val['criticalChance'] . $val['criticalMultiplier'] . $val['procChance'] . "<br>");
+        } else if (!isset($val['damage'])) {
             print_r($val['name'] . $val['type'] . $val['magazineSize'] . $val['reloadTime'] . $val['ammo'] . $val['totalDamage'] . $dmgTypes . $val['damagePerSecond'] . $val['accuracy'] . $val['criticalChance'] . $val['criticalMultiplier'] . $val['procChance'] . "<br>");
-        } else {
+        } else if (!isset($val['ammo']) && !isset($val['damage'])) {
             print_r($val['name'] . $val['type'] . $val['magazineSize'] . $val['reloadTime'] . $val['totalDamage'] . $dmgTypes . $val['damagePerSecond'] . $val['accuracy'] . $val['criticalChance'] . $val['criticalMultiplier'] . $val['procChance'] . "<br>");
         }
         
