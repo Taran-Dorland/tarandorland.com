@@ -18,7 +18,7 @@ include 'includes/header.php';
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
 
     <!-- Bootstrap core CSS -->
-    <link href="Cover%20Template%20%C2%B7%20Bootstrap_files/bootstrap.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -49,7 +49,7 @@ include 'includes/header.php';
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="Cover%20Template%20%C2%B7%20Bootstrap_files/cover.css" rel="stylesheet">
+    <link href="Includes/css/cover.css" rel="stylesheet">
   </head>
 
   <body class="text-center">
