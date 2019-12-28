@@ -73,7 +73,7 @@
       </footer>
     </div>
 
-    <?php include 'includes/libraries.php'; ?>
+    <?php include 'Includes/libraries.php'; ?>
 
   </body>
 </html>
