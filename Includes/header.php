@@ -18,7 +18,7 @@
     <title><?=$title?></title>
 
     <!-- Custom styles for this template -->
-    <link href="/css/cover.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
