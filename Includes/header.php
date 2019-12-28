@@ -20,7 +20,7 @@
 
     <title><?=$title?></title>
 
-    <!-- Custom styles for this template -->
+    <!-- Custom CSS -->
     <link href="css/cover.css" rel="stylesheet">
 
     <style>
