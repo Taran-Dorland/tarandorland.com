@@ -15,21 +15,11 @@ include 'includes/header.php';
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Cover Template · Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
-
     <!-- Bootstrap core CSS -->
-    <<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon.ico">
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
-
 
     <style>
       .bd-placeholder-img {
@@ -59,17 +49,16 @@ include 'includes/header.php';
           <h3 class="masthead-brand">Cover</h3>
             <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Projects</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and
-        beautiful home pages. Download, edit the text, and add your own 
-        fullscreen background photo to make it your own.
+        <h1 class="cover-heading">Taran Dorland</h1>
+        <p class="lead">
+            This is a page.
         </p>
         <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
@@ -78,7 +67,7 @@ include 'includes/header.php';
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>This is a footer.</p>
         </div>
       </footer>
     </div>
@@ -87,6 +76,7 @@ include 'includes/header.php';
 
   </body>
 </html>
+
 <?php
 
 
