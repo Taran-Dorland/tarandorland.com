@@ -1,6 +1,6 @@
 <?php
 
-$title = "Index";
+$title = "Contact";
 include 'includes/header.php';
 
 ?>
@@ -12,21 +12,15 @@ include 'includes/header.php';
         <div class="inner">
           <h3 class="masthead-brand">Taran Dorland</h3>
             <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="index.php">Home</a>
             <a class="nav-link" href="https://projects.tarandorland.com">Projects</a>
-            <a class="nav-link" href="contact.php">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">This is a header.</h1>
-        <p class="lead">
-            This is a page.
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
+        
       </main>
 
       <footer class="mastfoot mt-auto">
@@ -40,10 +34,3 @@ include 'includes/header.php';
 
   </body>
 </html>
-
-<?php
-
-
-
-
-?>
