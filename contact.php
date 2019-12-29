@@ -30,8 +30,8 @@ include 'Includes/header.php';
           <h2 class="cover-heading">Contact</h2>
           <div class="inner-list-text">
             <li class="contact-list-item"><i class="fab fa-github"></i> <a class="contact-item" href="https://github.com/Taran-Dorland" target="_blank">Github</a></li>
-            <li class="contact-list-item"><i class="fas fa-code"></i> <a class="contact-item" href="https://leetcode.com/taran-dorland/" target="_blank">Leetcode</a></li>
             <li class="contact-list-item"><i class="fab fa-linkedin"></i> <a class="contact-item" href="https://www.linkedin.com/in/taran-d-44332b147/" target="_blank">LinkedIn</a></li>
+            <li class="contact-list-item"><i class="fas fa-code"></i> <a class="contact-item" href="https://leetcode.com/taran-dorland/" target="_blank">Leetcode</a></li>
             <li class="contact-list-item"><i class="fas fa-envelope-square"></i> <a class="contact-item" href="#">taran@tarandorland.com</a></li>
           </div>
         </div>
