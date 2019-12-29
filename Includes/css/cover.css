@@ -107,9 +107,18 @@ body {
 
 
 p.foot-text {
-  font-size: smaller;
+  font-size: xx-small;
 }
 
 a.contact-item {
   text-emphasis-color: white;
+}
+
+li.contact-list-item {
+  list-style-type: none;
+}
+
+div.inner-list-text {
+  text-align: left;
+  font-size: medium;
 }

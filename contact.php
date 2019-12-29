@@ -18,12 +18,14 @@ include 'Includes/header.php';
 
       <main role="main" class="inner cover">
         <div class="inner">
-          <h3 class="cover-heading">Contact methods:</h3>
-          <ul>
-            <li><i class="fab fa-github"></i><a class="contact-item" href="https://github.com/Taran-Dorland">Github</a></li>
-            <li><i class="fab fa-linkedin"></i><a class="contact-item" href="https://www.linkedin.com/in/taran-d-44332b147/">LinkedIn</a></li>
-            <li><i class="fas fa-envelope-square"></i><a class="contact-item" href="#">taran@tarandorland.com</a></li>
-          </ul>
+          <h2 class="cover-heading">Contact methods:</h2>
+          <div class="inner-list-text">
+            <ul>
+              <li class="contact-list-item"><i class="fab fa-github"></i><a class="contact-item" href="https://github.com/Taran-Dorland"> Github</a></li>
+              <li class="contact-list-item"><i class="fab fa-linkedin"></i><a class="contact-item" href="https://www.linkedin.com/in/taran-d-44332b147/"> LinkedIn</a></li>
+              <li class="contact-list-item"><i class="fas fa-envelope-square"></i><a class="contact-item" href="#"> taran@tarandorland.com</a></li>
+            </ul>
+          </div>
         </div>
       </main>
 
