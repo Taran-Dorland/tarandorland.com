@@ -19,7 +19,8 @@ include 'Includes/header.php';
       <main role="main" class="inner cover">
         <div class="inner text-left">
           <div class="text-left text-nowrap">
-            <span><h2 class="cover-heading">About</h2><p class="date-text">28-12-2019</p></span>
+            <h2 class="cover-heading">About</h2>
+            <p class="date-text">28-12-2019</p>
           </div>
           <hr class="seperator">
           <p class="lead">I am a software <a href="https://www.youtube.com/watch?v=KMU0tzLwhbE" target="_blank">developer</a> who is open to all kinds of opportunities. Factorio and Rimworld are
