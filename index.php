@@ -17,18 +17,16 @@ include 'Includes/header.php';
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">This is a header.</h1>
+        <h1 class="cover-heading">Welcome to my webpage</h1>
+        <p class="lead"></p>
         <p class="lead">
-            This is a page.
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+          <a href="contact.php" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>This is a footer.</p>
+          <p class="foot-text">Boring, clean, yet functional webpage.</p>
         </div>
       </footer>
     </div>
