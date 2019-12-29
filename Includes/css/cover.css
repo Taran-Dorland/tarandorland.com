@@ -119,6 +119,15 @@ li.contact-list-item {
 }
 
 div.inner-list-text {
-  text-align: left;
+  text-align: center;
   font-size: medium;
+}
+
+h2.cover-heading {
+  text-emphasis: bold;
+  color: coral;
+}
+
+hr.seperator {
+  color: coral;
 }
