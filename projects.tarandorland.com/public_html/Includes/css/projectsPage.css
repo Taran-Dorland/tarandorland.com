@@ -9,3 +9,9 @@ a.breadcrumb-link-item {
 ol.breadcrumb {
     background-color: #333;
 }
+
+h2.cover-heading {
+    text-emphasis: bold;
+    color: coral;
+}
+

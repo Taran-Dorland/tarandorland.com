@@ -15,16 +15,49 @@ include 'Includes/header.php';
         </div>
         <div class="container">
             <div class="row">
-                <h2 class="cover-heading">Project 1</h2>
+                <div class="col-sm-12">
+                    <h2 class="cover-heading">DMU Extension Utiliy</h2>
+                </div>
+                <div class="col-sm-8">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <p>This is where some info will go</p>
+                </div>
             </div>
             <div class="row">
-                <h2 class="cover-heading">Project 2</h2>
+                <h2 class="cover-heading">pythonChat</h2>
             </div>
             <div class="row">
-                <h2 class="cover-heading">Project 3</h2>
+                <h2 class="cover-heading">Chatterer</h2>
             </div>
             <div class="row">
-                <h2 class="cover-heading">Project 4</h2>
+                <h2 class="cover-heading">tarandorland.com</h2>
             </div>
         </div>
 
