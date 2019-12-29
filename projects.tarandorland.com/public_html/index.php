@@ -19,6 +19,19 @@ include 'Includes/header.php';
                     <h2 class="cover-heading">DMU Extension Utiliy</h2>
                 </div>
                 <div class="col-sm-8">
+                </div>
+                <div class="col-sm-4">
+                    <p>This is where some info will go</p>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="cover-heading">pythonChat</h2>
+            </div>
+            <div class="row">
+            <div class="col-sm-12">
+                    <h2 class="cover-heading">Chatterer</h2>
+                </div>
+                <div class="col-sm-8">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -27,13 +40,13 @@ include 'Includes/header.php';
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="Includes/img/chatterer/main.png" class="d-block w-100" alt="Main landing page.">
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="Includes/img/chatterer/login.png" class="d-block w-100" alt="Account login page.">
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="Includes/img/chatterer/connected.png" class="d-block w-100" alt="Successful connection page.">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -49,12 +62,6 @@ include 'Includes/header.php';
                 <div class="col-sm-4">
                     <p>This is where some info will go</p>
                 </div>
-            </div>
-            <div class="row">
-                <h2 class="cover-heading">pythonChat</h2>
-            </div>
-            <div class="row">
-                <h2 class="cover-heading">Chatterer</h2>
             </div>
             <div class="row">
                 <h2 class="cover-heading">tarandorland.com</h2>
