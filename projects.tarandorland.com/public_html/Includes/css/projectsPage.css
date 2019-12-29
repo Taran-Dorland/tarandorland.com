@@ -18,3 +18,7 @@ h2.cover-heading {
 div.info-col {
     background-color: white;
 }
+
+hr.seperator {
+    background-color: rgba(255, 255, 255, .5);
+}

@@ -16,6 +16,7 @@ include 'Includes/header.php';
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    <hr class="seperator">
                     <h2 class="cover-heading">DMU Extension Utiliy</h2>
                 </div>
                 <div class="col-sm-8">
@@ -56,7 +57,8 @@ include 'Includes/header.php';
             </div>
             <div class="row">
             <div class="col-sm-12">
-                    <h2 class="cover-heading">pythonChat</h2>
+                <hr class="seperator">
+                <h2 class="cover-heading">pythonChat</h2>
                 </div>
                 <div class="col-sm-8">
                 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
@@ -116,7 +118,8 @@ include 'Includes/header.php';
             </div>
             <div class="row">
             <div class="col-sm-12">
-                    <h2 class="cover-heading">Chatterer</h2>
+                <hr class="seperator">
+                <h2 class="cover-heading">Chatterer</h2>
                 </div>
                 <div class="col-sm-8">
                     <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
@@ -164,7 +167,8 @@ include 'Includes/header.php';
             </div>
             <div class="row">
             <div class="col-sm-12">
-                    <h2 class="cover-heading">tarandorland.com</h2>
+                <hr class="seperator">
+                <h2 class="cover-heading">tarandorland.com</h2>
                 </div>
                 <div class="col-sm-8">
                 </div>
