@@ -52,7 +52,7 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p>This is where some info will go</p>
+                    <p class="project-info">This is where some info will go</p>
                 </div>
             </div>
             <div class="row">
@@ -113,7 +113,7 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p>This is where some info will go</p>
+                    <p class="project-info">This is where some info will go</p>
                 </div>
             </div>
             <div class="row">
@@ -162,7 +162,7 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p>This is where some info will go</p>
+                    <p class="project-info">This is where some info will go</p>
                 </div>
             </div>
             <div class="row">
@@ -195,7 +195,7 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p>This is where some info will go</p>
+                    <p class="project-info">This is where some info will go</p>
                 </div>
             </div>
         </div>

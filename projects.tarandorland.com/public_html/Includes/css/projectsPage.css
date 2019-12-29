@@ -14,13 +14,18 @@ div.header-col {
     text-align: left;
 }
 
+div.carousel:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 h2.cover-heading {
     text-emphasis: bold;
     color: coral;
 }
 
 div.info-col {
-    background-color: white;
+    background-color: darkgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 hr.seperator {
@@ -35,4 +40,8 @@ footer.footer {
 
 span.text-muted {
     font-size: x-small;
+}
+
+p.project-info {
+    color: whitesmoke;
 }
