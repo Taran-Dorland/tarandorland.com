@@ -20,13 +20,13 @@ include 'Includes/header.php';
         <h1 class="cover-heading">Welcome to my webpage</h1>
         <p class="lead"></p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+          <a href="contact.php" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p class="foot-text">Nice clean, boring, yet functional webpage</p>
+          <p class="foot-text">Boring, clean, yet functional webpage.</p>
         </div>
       </footer>
     </div>
