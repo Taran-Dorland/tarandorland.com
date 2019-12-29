@@ -8,7 +8,7 @@ include 'Includes/header.php';
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">Taran Dorland</h3>
-            <nav class="nav nav-masthead justify-content-center">
+            <nav class="nav nav-masthead justify-content-center navbar-custom">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="https://projects.tarandorland.com">Projects</a>
             <a class="nav-link" href="contact.php">Contact</a>
@@ -20,7 +20,7 @@ include 'Includes/header.php';
         <h1 class="cover-heading">Welcome to my webpage</h1>
         <p class="lead"></p>
         <p class="lead">
-          <a href="contact.php" class="btn btn-lg btn-secondary">Learn more</a>
+          <a id="view-more-btn" href="contact.php" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
       </main>
 
