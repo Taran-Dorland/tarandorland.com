@@ -18,15 +18,17 @@ include 'Includes/header.php';
 
       <main role="main" class="inner cover">
         <div class="inner">
-          <h3 class="cover-heading">About</h3>
-          <p class="lead">I am a software developer who is open to all kinds of opportunities.</p>
+          <h4 class="cover-heading">About</h4>
+          <p class="lead">I am a software <a href="https://www.youtube.com/watch?v=KMU0tzLwhbE" target="_blank">developer</a> who is open to all kinds of opportunities. Factorio and Rimworld are
+            my current favourite games. I have seen the light and now use Linux as my everyday OS, specifically Manjaro.
+          </p>
           <hr>
           <h4 class="cover-heading">Contact</h4>
           <div class="inner-list-text">
             <ul>
-              <li class="contact-list-item"><i class="fab fa-github"></i> <a class="contact-item" href="https://github.com/Taran-Dorland">Github</a></li>
-              <li class="contact-list-item"><i class="fab fa-linkedin"></i> <a class="contact-item" href="https://www.linkedin.com/in/taran-d-44332b147/">LinkedIn</a></li>
-              <li class="contact-list-item"><i class="fas fa-envelope-square"></i> <a class="contact-item" href="#">taran@tarandorland.com</a></li>
+              <li class="contact-list-item"><i class="fab fa-github"></i> <a class="contact-item" href="https://github.com/Taran-Dorland" target="_blank">Github</a></li>
+              <li class="contact-list-item"><i class="fab fa-linkedin"></i> <a class="contact-item" href="https://www.linkedin.com/in/taran-d-44332b147/" target="_blank">LinkedIn</a></li>
+              <li class="contact-list-item"><i class="fas fa-envelope-square"></i> <a class="contact-item" href="#" target="_blank">taran@tarandorland.com</a></li>
             </ul>
           </div>
         </div>
@@ -34,7 +36,7 @@ include 'Includes/header.php';
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p class="foot-text">This is a <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> server, hosted on <a href="https://www.digitalocean.com/">Digital Ocean</a>.</p>
+          <p class="foot-text">This is a <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_blank">LAMP</a> server, hosted on <a href="https://www.digitalocean.com/" target="_blank">Digital Ocean</a>.</p>
         </div>
       </footer>
     </div>
