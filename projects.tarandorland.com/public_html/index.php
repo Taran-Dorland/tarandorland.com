@@ -171,6 +171,28 @@ include 'Includes/header.php';
                 <h2 class="cover-heading">tarandorland.com</h2>
                 </div>
                 <div class="col-sm-8">
+                <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Includes/img/tarandorland.com/main.png" class="d-block w-100" alt="Main landing page.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Includes/img/tarandorland.com/contact.png" class="d-block w-100" alt="Account login page.">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
                 </div>
                 <div class="col-sm-4 info-col">
                     <p>This is where some info will go</p>
