@@ -23,7 +23,7 @@
     <title><?=$title?></title>
 
     <!-- Custom CSS -->
-    <link href="Includes/css/cover.css" rel="stylesheet">
+    <link href="Includes/css/projectsPage.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
