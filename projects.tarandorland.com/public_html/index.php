@@ -59,18 +59,21 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <h4 class="project-item-header">Languages used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Languages used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                                 <li class="project-list-item">3</li>
                             </ul>
-                            <h4 class="project-item-header">Software/Technology used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Software/Technology used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                             </ul>
-                            <h4 class="project-item-header">Links:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Links</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                             </ul>
@@ -143,18 +146,21 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <h4 class="project-item-header">Languages used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Languages used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                                 <li class="project-list-item">3</li>
                             </ul>
-                            <h4 class="project-item-header">Software/Technology used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Software/Technology used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                             </ul>
-                            <h4 class="project-item-header">Links:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Links</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                             </ul>
@@ -215,18 +221,21 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <h4 class="project-item-header">Languages used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Languages used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                                 <li class="project-list-item">3</li>
                             </ul>
-                            <h4 class="project-item-header">Software/Technology used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Software/Technology used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                             </ul>
-                            <h4 class="project-item-header">Links:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Links</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                             </ul>
@@ -271,18 +280,21 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <h4 class="project-item-header">Languages used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Languages used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                                 <li class="project-list-item">3</li>
                             </ul>
-                            <h4 class="project-item-header">Software/Technology used:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Software/Technology used</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                                 <li class="project-list-item">2</li>
                             </ul>
-                            <h4 class="project-item-header">Links:</h4>
+                            <hr class="seperator">
+                            <h4 class="project-item-header">Links</h4>
                             <ul>
                                 <li class="project-list-item">1</li>
                             </ul>
