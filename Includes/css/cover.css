@@ -146,8 +146,13 @@ hr.seperator {
   color: coral;
 }
 
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
+  color: coral;
+}
+
 #view-more-btn {
   background-color: coral;
+  border: none;
 }
 
 #view-more-btn:hover {
