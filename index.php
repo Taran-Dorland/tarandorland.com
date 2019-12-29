@@ -20,7 +20,7 @@ include 'Includes/header.php';
         <h1 class="cover-heading">Welcome to my webpage</h1>
         <p class="lead"></p>
         <p class="lead">
-          <a href="contact.php" class="btn btn-lg btn-secondary">Learn more</a>
+          <a id="view-more-btn" href="contact.php" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
       </main>
 

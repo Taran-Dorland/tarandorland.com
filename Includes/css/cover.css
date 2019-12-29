@@ -141,3 +141,15 @@ hr.seperator {
   color: coral;
   border-bottom-color: coral;
 }
+
+.nav-masthead .nav-link:hover {
+  color: coral;
+}
+
+#view-more-btn {
+  color: coral;
+}
+
+#view-more-btn:hover {
+  opacity: .50;
+}
