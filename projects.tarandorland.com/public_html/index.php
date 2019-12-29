@@ -203,6 +203,12 @@ include 'Includes/header.php';
 
     </main>
 
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p class="foot-text">End of page.</p>
+        </div>
+    </footer>
+
     <?php include 'Includes/libraries.php'; ?>
 
     <!-- Custom JS -->
