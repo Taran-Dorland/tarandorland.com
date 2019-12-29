@@ -203,9 +203,9 @@ include 'Includes/header.php';
 
     </main>
 
-    <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p class="foot-text">End of page.</p>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">End of page.</span>
         </div>
     </footer>
 
