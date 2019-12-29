@@ -18,6 +18,7 @@ include 'Includes/header.php';
                 <div class="col-sm-12">
                     <h2 class="cover-heading">DMU Extension Utiliy</h2>
                 </div>
+                <div class="col-sm-8">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -48,7 +49,6 @@ include 'Includes/header.php';
                         <span class="sr-only">Next</span>
                     </a>
                     </div>
-                <div class="col-sm-8">
                 </div>
                 <div class="col-sm-4 info-col">
                     <p>This is where some info will go</p>
