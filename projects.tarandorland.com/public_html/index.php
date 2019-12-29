@@ -40,13 +40,13 @@ include 'Includes/header.php';
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="Includes/img/chatterer/main.png" class="d-block w-100" alt="Main landing page.">
+                            <img class="carousel-img" src="Includes/img/chatterer/main.png" class="d-block w-100" alt="Main landing page.">
                         </div>
                         <div class="carousel-item">
-                            <img src="Includes/img/chatterer/login.png" class="d-block w-100" alt="Account login page.">
+                            <img class="carousel-img" src="Includes/img/chatterer/login.png" class="d-block w-100" alt="Account login page.">
                         </div>
                         <div class="carousel-item">
-                            <img src="Includes/img/chatterer/connected.png" class="d-block w-100" alt="Successful connection page.">
+                            <img class="carousel-img" src="Includes/img/chatterer/connected.png" class="d-block w-100" alt="Successful connection page.">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
