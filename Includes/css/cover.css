@@ -128,7 +128,7 @@ div.inner-list-text {
 }
 
 div.date-holder {
-  text-align: center;
+  text-align: left;
 }
 
 h2.cover-heading {
@@ -137,9 +137,9 @@ h2.cover-heading {
 }
 
 hr.seperator {
-  background-color: coral;
+  background-color: rgba(255, 255, 255, .5);
 }
 
 a.active {
-  color: coral;
+  background-color: coral;
 }
