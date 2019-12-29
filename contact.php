@@ -17,12 +17,14 @@ include 'Includes/header.php';
       </header>
 
       <main role="main" class="inner cover">
-        
+        <div class="inner">
+          
+        </div>
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>This is a footer.</p>
+          <p class="foot-text"></p>
         </div>
       </footer>
     </div>
