@@ -110,6 +110,10 @@ p.foot-text {
   font-size: xx-small;
 }
 
+p.date-text {
+  color: coral;
+}
+
 a.contact-item {
   text-emphasis-color: white;
 }
@@ -119,8 +123,12 @@ li.contact-list-item {
 }
 
 div.inner-list-text {
-  text-align: center;
+  text-align: left;
   font-size: medium;
+}
+
+div.date-holder {
+  text-align: center;
 }
 
 h2.cover-heading {
@@ -129,5 +137,9 @@ h2.cover-heading {
 }
 
 hr.seperator {
+  background-color: coral;
+}
+
+a.active {
   color: coral;
 }

@@ -18,7 +18,9 @@ include 'Includes/header.php';
 
       <main role="main" class="inner cover">
         <div class="inner">
-          <p class="date-text">28-12-2019</p>
+          <div class="date-holder">
+            <p class="date-text">28-12-2019</p>
+          </div>
           <hr class="seperator">
           <h2 class="cover-heading">About</h2>
           <p class="lead">I am a software <a href="https://www.youtube.com/watch?v=KMU0tzLwhbE" target="_blank">developer</a> who is open to all kinds of opportunities. Factorio and Rimworld are
