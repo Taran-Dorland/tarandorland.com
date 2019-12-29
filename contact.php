@@ -8,7 +8,7 @@ include 'Includes/header.php';
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">Taran Dorland</h3>
-            <nav class="nav nav-masthead justify-content-center">
+            <nav class="nav nav-masthead justify-content-center navbar-custom">
             <a class="nav-link" href="index.php">Home</a>
             <a class="nav-link" href="https://projects.tarandorland.com">Projects</a>
             <a class="nav-link active" href="#">Contact</a>
@@ -17,8 +17,8 @@ include 'Includes/header.php';
       </header>
 
       <main role="main" class="inner cover">
-        <div class="inner date-holder">
-          <p class="date-text"><h2 class="cover-heading">About</h2>28-12-2019</p>
+        <div class="inner text-left">
+          <p class="date-text">28-12-2019</p>
           <hr class="seperator">
           <p class="lead">I am a software <a href="https://www.youtube.com/watch?v=KMU0tzLwhbE" target="_blank">developer</a> who is open to all kinds of opportunities. Factorio and Rimworld are
             my current favourite games. I have seen the light and now use Linux as my everyday OS, specifically Manjaro.
