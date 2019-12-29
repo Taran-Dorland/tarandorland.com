@@ -147,7 +147,7 @@ hr.seperator {
 }
 
 #view-more-btn {
-  color: coral;
+  background-color: coral;
 }
 
 #view-more-btn:hover {
