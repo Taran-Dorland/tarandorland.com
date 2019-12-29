@@ -137,7 +137,7 @@ hr.seperator {
   background-color: rgba(255, 255, 255, .5);
 }
 
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: coral;
+.nav-masthead .active {
+  color: coral;
+  border-bottom-color: coral;
 }
