@@ -4,9 +4,8 @@ body {
 
 a.breadcrumb-link-item {
     color: coral;
-    text-emphasis-color: coral;
 }
 
-nav.custom-nav {
-    background-color: slategray;
+ol.breadcrumb {
+    background-color: #333;
 }
