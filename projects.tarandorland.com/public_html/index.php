@@ -48,6 +48,15 @@ include 'Includes/header.php';
                         <div class="carousel-item">
                             <img src="Includes/img/chatterer/connected.png" class="d-block w-100" alt="Successful connection page.">
                         </div>
+                        <div class="carousel-item">
+                            <img src="Includes/img/chatterer/connectedandchatting.png" class="d-block w-100" alt="Chatting example 1.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Includes/img/chatterer/connectedandchatting2.png" class="d-block w-100" alt="Chatting example 2.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Includes/img/chatterer/disconnect.png" class="d-block w-100" alt="Successful disconnect page.">
+                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,7 +68,7 @@ include 'Includes/header.php';
                     </a>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 info-col">
                     <p>This is where some info will go</p>
                 </div>
             </div>
