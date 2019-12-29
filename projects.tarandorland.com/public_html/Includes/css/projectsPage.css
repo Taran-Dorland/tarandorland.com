@@ -10,6 +10,10 @@ ol.breadcrumb {
     background-color: #333;
 }
 
+div.header-col {
+    text-align: left;
+}
+
 h2.cover-heading {
     text-emphasis: bold;
     color: coral;
@@ -23,6 +27,11 @@ hr.seperator {
     background-color: rgba(255, 255, 255, .5);
 }
 
-p.foot-text {
-    font-size: xx-small;
+footer.footer {
+    height: 2em;
+    text-align: center;
+}
+
+span.text-muted {
+    font-size: x-small;
 }

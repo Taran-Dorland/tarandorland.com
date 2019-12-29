@@ -15,7 +15,7 @@ include 'Includes/header.php';
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 header-col">
                     <hr class="seperator">
                     <h2 class="cover-heading">DMU Extension Utiliy</h2>
                 </div>
@@ -56,7 +56,7 @@ include 'Includes/header.php';
                 </div>
             </div>
             <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 header-col">
                 <hr class="seperator">
                 <h2 class="cover-heading">pythonChat</h2>
                 </div>
@@ -117,7 +117,7 @@ include 'Includes/header.php';
                 </div>
             </div>
             <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 header-col">
                 <hr class="seperator">
                 <h2 class="cover-heading">Chatterer</h2>
                 </div>
@@ -166,7 +166,7 @@ include 'Includes/header.php';
                 </div>
             </div>
             <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 header-col">
                 <hr class="seperator">
                 <h2 class="cover-heading">tarandorland.com</h2>
                 </div>
