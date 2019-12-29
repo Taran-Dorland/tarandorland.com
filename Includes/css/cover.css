@@ -109,3 +109,7 @@ body {
 p.foot-text {
   font-size: smaller;
 }
+
+a.contact-item {
+  text-emphasis-color: white;
+}

@@ -18,8 +18,12 @@ include 'Includes/header.php';
 
       <main role="main" class="inner cover">
         <div class="inner">
-          <p class="lead">Test message 1</p>
-          <p class="lead">Test message 2</p>
+          <h3 class="cover-heading">Contact methods:</h3>
+          <ul>
+            <li><i class="fab fa-github"></i><a class="contact-item" href="https://github.com/Taran-Dorland">Github</a></li>
+            <li><i class="fab fa-linkedin"></i><a class="contact-item" href="https://www.linkedin.com/in/taran-d-44332b147/">LinkedIn</a></li>
+            <li><i class="fas fa-envelope-square"></i><a class="contact-item" href="#">taran@tarandorland.com</a></li>
+          </ul>
         </div>
       </main>
 
