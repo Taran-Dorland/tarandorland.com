@@ -52,7 +52,30 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p class="project-info">This is where some info will go</p>
+                <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p class="project-info">This is a small summary of what this project was about.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <span>Languages used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                            <span>Software/Technology used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                            <span>Links:</span>
+                            <ul>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -113,7 +136,30 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p class="project-info">This is where some info will go</p>
+                <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p class="project-info">This is a small summary of what this project was about.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <span>Languages used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                            <span>Software/Technology used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                            <span>Links:</span>
+                            <ul>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -162,7 +208,30 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p class="project-info">This is where some info will go</p>
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <p class="project-info">This is a small summary of what this project was about.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <span>Languages used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                            <span>Software/Technology used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                            <span>Links:</span>
+                            <ul>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -195,7 +264,30 @@ include 'Includes/header.php';
                     </div>
                 </div>
                 <div class="col-sm-4 info-col">
-                    <p class="project-info">This is where some info will go</p>
+                <div class="row">
+                    <div class="col-sm-12 text-left">
+                        <p class="project-info">This is a small summary of what this project was about.</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-left">
+                            <span>Languages used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                            <span>Software/Technology used:</span>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                            <span>Links:</span>
+                            <ul>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
