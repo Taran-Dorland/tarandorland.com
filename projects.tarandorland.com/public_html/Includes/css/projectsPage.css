@@ -46,10 +46,11 @@ p.project-info {
     color: whitesmoke;
 }
 
-span {
+h4.project-item-header {
     color: whitesmoke;
 }
 
-li {
+li.project-list-item {
     color: whitesmoke;
+    list-style-type: none;
 }

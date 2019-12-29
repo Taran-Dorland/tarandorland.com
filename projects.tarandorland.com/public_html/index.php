@@ -59,20 +59,20 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <span>Languages used:</span>
+                            <h4 class="project-item-header">Languages used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
+                                <li class="project-list-item">3</li>
                             </ul>
-                            <span>Software/Technology used:</span>
+                            <h4 class="project-item-header">Software/Technology used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
                             </ul>
-                            <span>Links:</span>
+                            <h4 class="project-item-header">Links:</h4>
                             <ul>
-                                <li>1</li>
+                                <li class="project-list-item">1</li>
                             </ul>
                         </div>
                     </div>
@@ -143,20 +143,20 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <span>Languages used:</span>
+                            <h4 class="project-item-header">Languages used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
+                                <li class="project-list-item">3</li>
                             </ul>
-                            <span>Software/Technology used:</span>
+                            <h4 class="project-item-header">Software/Technology used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
                             </ul>
-                            <span>Links:</span>
+                            <h4 class="project-item-header">Links:</h4>
                             <ul>
-                                <li>1</li>
+                                <li class="project-list-item">1</li>
                             </ul>
                         </div>
                     </div>
@@ -215,20 +215,20 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <span>Languages used:</span>
+                            <h4 class="project-item-header">Languages used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
+                                <li class="project-list-item">3</li>
                             </ul>
-                            <span>Software/Technology used:</span>
+                            <h4 class="project-item-header">Software/Technology used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
                             </ul>
-                            <span>Links:</span>
+                            <h4 class="project-item-header">Links:</h4>
                             <ul>
-                                <li>1</li>
+                                <li class="project-list-item">1</li>
                             </ul>
                         </div>
                     </div>
@@ -271,20 +271,20 @@ include 'Includes/header.php';
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <span>Languages used:</span>
+                            <h4 class="project-item-header">Languages used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
+                                <li class="project-list-item">3</li>
                             </ul>
-                            <span>Software/Technology used:</span>
+                            <h4 class="project-item-header">Software/Technology used:</h4>
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
+                                <li class="project-list-item">1</li>
+                                <li class="project-list-item">2</li>
                             </ul>
-                            <span>Links:</span>
+                            <h4 class="project-item-header">Links:</h4>
                             <ul>
-                                <li>1</li>
+                                <li class="project-list-item">1</li>
                             </ul>
                         </div>
                     </div>
