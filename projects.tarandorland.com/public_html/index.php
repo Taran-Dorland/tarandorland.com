@@ -54,7 +54,10 @@ include 'Includes/header.php';
                 <div class="col-sm-4 info-col">
                 <div class="row">
                         <div class="col-sm-12 text-left">
-                            <p class="project-info">This is a small summary of what this project was about.</p>
+                            <p class="project-info">A utility built to integrate with an existing system
+                                by taking the exported data of the existing system and generating graphs,
+                                tables, and reports. 
+                            </p>
                         </div>
                     </div>
                     <div class="row">
@@ -143,7 +146,10 @@ include 'Includes/header.php';
                 <div class="col-sm-4 info-col">
                 <div class="row">
                         <div class="col-sm-12 text-left">
-                            <p class="project-info">This is a small summary of what this project was about.</p>
+                            <p class="project-info">A CLI client-server application with moderate customizability
+                                using TCP/IP. Simulates dropped packets and checksums and offers very basic
+                                text ecryption using ROT13 to display the viability.
+                            </p>
                         </div>
                     </div>
                     <div class="row">
@@ -216,7 +222,11 @@ include 'Includes/header.php';
                 <div class="col-sm-4 info-col">
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <p class="project-info">This is a small summary of what this project was about.</p>
+                            <p class="project-info">A desktop application created to connect to Twitch chat
+                                IRC servers using a Twitch account (Username/Password) and OAuth using the
+                                Twitch API. This allows the user to Join/Part Twitch chat channels and
+                                view and chat in those channels.
+                            </p>
                         </div>
                     </div>
                     <div class="row">
@@ -235,6 +245,7 @@ include 'Includes/header.php';
                                 <li class="project-list-item"><i class="fas fa-atom"></i> Electron</li>
                                 <li class="project-list-item"><i class="fab fa-npm"></i> Npm</li>
                                 <li class="project-list-item"><i class="fab fa-bootstrap"></i></i> Bootstrap</li>
+                                <li class="project-list-item"><i class="fab fa-twitch"></i> <a class="project-link" href="https://dev.twitch.tv/docs/authentication/" target="_blank">Twitch API</a></li>
                                 <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
                                 <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
                             </ul>
@@ -278,7 +289,9 @@ include 'Includes/header.php';
                 <div class="col-sm-4 info-col">
                 <div class="row">
                     <div class="col-sm-12 text-left">
-                        <p class="project-info">This is a small summary of what this project was about.</p>
+                        <p class="project-info">A website created to provide some information about myself,
+                            personal projects, and schoolwork. Setup and running on a LAMP stack.
+                        </p>
                     </div>
                     </div>
                     <div class="row">
@@ -288,6 +301,7 @@ include 'Includes/header.php';
                             <ul>
                                 <li class="project-list-item"><i class="fab fa-js-square"></i> Javascript (jQuery)</li>
                                 <li class="project-list-item"><i class="fab fa-php"></i> PHP</li>
+                                <li class="project-list-item"><i class="fas fa-database"></i> MySQL</li>
                                 <li class="project-list-item"><i class="fab fa-css3-alt"></i> CSS</li>
                                 <li class="project-list-item"><i class="fab fa-html5"></i> HTML</li>
                             </ul>
@@ -295,6 +309,7 @@ include 'Includes/header.php';
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
                                 <li class="project-list-item"><i class="fab fa-bootstrap"></i></i> Bootstrap</li>
+                                <li class="project-list-item"><i class="fab fa-ubuntu"></i> Linux (Ubuntu Server)</li>
                                 <li class="project-list-item"><i class="fas fa-server"></i> Apache2</li>
                                 <li class="project-list-item"><i class="fab fa-digital-ocean"></i> Digital Ocean</li>
                                 <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
