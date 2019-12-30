@@ -156,7 +156,7 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
-                                <li class="project-list-item">Pip</li>
+                                <li class="project-list-item"><i class="fas fa-box"></i> Pip</li>
                                 <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
                                 <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
                             </ul>
@@ -293,7 +293,7 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
-                                <li class="project-list-item">Apache2</li>
+                                <li class="project-list-item"><i class="fas fa-server"></i> Apache2</li>
                                 <li class="project-list-item"><i class="fab fa-digital-ocean"></i> Digital Ocean</li>
                                 <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
                                 <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
