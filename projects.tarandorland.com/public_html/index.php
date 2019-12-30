@@ -234,14 +234,14 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Languages used</h6>
                             <ul>
-                                <li class="project-list-item"><i class="fab fa-js-square"></i> Javascript</li>
+                                <li class="project-list-item"><i class="fab fa-js-square"></i> Javascript (NodeJS)</li>
                                 <li class="project-list-item"><i class="fab fa-css3-alt"></i> CSS</li>
                                 <li class="project-list-item"><i class="fab fa-html5"></i> HTML</li>
                             </ul>
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
-                                <li class="project-list-item"><i class="fab fa-node-js"></i> Javascript (Node)</li>
+                                <li class="project-list-item"><i class="fab fa-node"></i> Node</li>
                                 <li class="project-list-item"><i class="fas fa-atom"></i> Electron</li>
                                 <li class="project-list-item"><i class="fab fa-npm"></i> Npm</li>
                                 <li class="project-list-item"><i class="fab fa-bootstrap"></i></i> Bootstrap</li>
