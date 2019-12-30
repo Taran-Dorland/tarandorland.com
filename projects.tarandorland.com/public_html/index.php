@@ -77,7 +77,7 @@ include 'Includes/header.php';
                             </ul>
                             <hr class="seperator">
                             <ul>
-                                <li class="project-list-item"><i class="fab fa-github"></i> <a href="https://github.com/Taran-Dorland/4000YProject" target="_blank">Github Repo</a></li>
+                                <li class="project-list-item"><i class="fab fa-github"></i> <a class="project-link" href="https://github.com/Taran-Dorland/4000YProject" target="_blank">Git Repo</a></li>
                             </ul>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ include 'Includes/header.php';
                             </ul>
                             <hr class="seperator">
                             <ul>
-                                <li class="project-list-item"><i class="fab fa-github"></i> <a href="https://github.com/Taran-Dorland/pythonChat" target="_blank">Github Repo</a></li>
+                                <li class="project-list-item"><i class="fab fa-github"></i> <a class="project-link" href="https://github.com/Taran-Dorland/pythonChat" target="_blank">Git Repo</a></li>
                             </ul>
                         </div>
                     </div>
@@ -239,7 +239,7 @@ include 'Includes/header.php';
                             </ul>
                             <hr class="seperator">
                             <ul>
-                                <li class="project-list-item"><i class="fab fa-github"></i> <a href="https://github.com/Taran-Dorland/Chatterer" target="_blank">Github Repo</a></li>
+                                <li class="project-list-item"><i class="fab fa-github"></i> <a class="project-link" href="https://github.com/Taran-Dorland/Chatterer" target="_blank">Git Repo</a></li>
                             </ul>
                         </div>
                     </div>
@@ -300,7 +300,7 @@ include 'Includes/header.php';
                             </ul>
                             <hr class="seperator">
                             <ul>
-                                <li class="project-list-item"><i class="fab fa-github"></i> <a href="https://github.com/Taran-Dorland/tarandorland.com" target="_blank">Github Repo</a></li>
+                                <li class="project-list-item"><i class="fab fa-github"></i> <a class="project-link" href="https://github.com/Taran-Dorland/tarandorland.com" target="_blank">Git Repo</a></li>
                             </ul>
                         </div>
                     </div>

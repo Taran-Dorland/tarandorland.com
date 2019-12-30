@@ -54,3 +54,7 @@ li.project-list-item {
     color: whitesmoke;
     list-style-type: none;
 }
+
+a.project-link {
+    color: coral;
+}
