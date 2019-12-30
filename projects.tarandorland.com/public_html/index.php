@@ -17,7 +17,7 @@ include 'Includes/header.php';
             <div class="row">
                 <div class="col-sm-12 header-col">
                     <hr class="seperator">
-                    <h2 class="cover-heading">DMU Extension Utiliy</h2>
+                    <h2 class="cover-heading">DMU Extension Utility</h2>
                 </div>
                 <div class="col-sm-8">
                 <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
@@ -148,7 +148,7 @@ include 'Includes/header.php';
                         <div class="col-sm-12 text-left">
                             <p class="project-info">A CLI client-server application with moderate customizability
                                 using TCP/IP. Simulates dropped packets and checksums and offers very basic
-                                text ecryption using ROT13 to display the viability.
+                                text encryption using ROT13 to display the viability.
                             </p>
                         </div>
                     </div>
