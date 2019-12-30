@@ -62,15 +62,18 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Languages used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
-                                <li class="project-list-item">3</li>
+                                <li class="project-list-item"><i class="fab fa-js-square"></i> Javascript (React)</li>
+                                <li class="project-list-item"><i class="fab fa-css3-alt"></i> CSS</li>
+                                <li class="project-list-item"><i class="fab fa-html5"></i> HTML</li>
                             </ul>
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
+                                <li class="project-list-item"><i class="fab fa-react"></i> React</li>
+                                <li class="project-list-item"><i class="fas fa-atom"></i> Electron</li>
+                                <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
+                                <li class="project-list-item"><i class="fab fa-yarn"></i> Yarn</li>
+                                <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
                             </ul>
                             <hr class="seperator">
                             <ul>
@@ -148,15 +151,14 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Languages used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
-                                <li class="project-list-item">3</li>
+                                <li class="project-list-item"><i class="fab fa-python"></i> Python3</li>
                             </ul>
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
+                                <li class="project-list-item">Pip</li>
+                                <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
+                                <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
                             </ul>
                             <hr class="seperator">
                             <ul>
@@ -222,15 +224,18 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Languages used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
-                                <li class="project-list-item">3</li>
+                                <li class="project-list-item"><i class="fab fa-js-square"></i> Javascript</li>
+                                <li class="project-list-item"><i class="fab fa-css3-alt"></i> CSS</li>
+                                <li class="project-list-item"><i class="fab fa-html5"></i> HTML</li>
                             </ul>
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
+                                <li class="project-list-item"><i class="fab fa-node-js"></i> Javascript (Node)</li>
+                                <li class="project-list-item"><i class="fas fa-atom"></i> Electron</li>
+                                <li class="project-list-item"><i class="fab fa-npm"></i> Npm</li>
+                                <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
+                                <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
                             </ul>
                             <hr class="seperator">
                             <ul>
@@ -280,15 +285,18 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Languages used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
-                                <li class="project-list-item">3</li>
+                                <li class="project-list-item"><i class="fab fa-js-square"></i> Javascript (jQuery)</li>
+                                <li class="project-list-item"><i class="fab fa-php"></i> PHP</li>
+                                <li class="project-list-item"><i class="fab fa-css3-alt"></i> CSS</li>
+                                <li class="project-list-item"><i class="fab fa-html5"></i> HTML</li>
                             </ul>
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
-                                <li class="project-list-item">1</li>
-                                <li class="project-list-item">2</li>
+                                <li class="project-list-item">Apache2</li>
+                                <li class="project-list-item"><i class="fab fa-digital-ocean"></i> Digital Ocean</li>
+                                <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
+                                <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
                             </ul>
                             <hr class="seperator">
                             <ul>
