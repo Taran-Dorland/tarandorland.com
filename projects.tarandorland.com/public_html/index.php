@@ -234,6 +234,7 @@ include 'Includes/header.php';
                                 <li class="project-list-item"><i class="fab fa-node-js"></i> Javascript (Node)</li>
                                 <li class="project-list-item"><i class="fas fa-atom"></i> Electron</li>
                                 <li class="project-list-item"><i class="fab fa-npm"></i> Npm</li>
+                                <li class="project-list-item"><i class="fab fa-bootstrap"></i></i> Bootstrap</li>
                                 <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
                                 <li class="project-list-item"><i class="fab fa-git"></i> Git</li>
                             </ul>
@@ -293,6 +294,7 @@ include 'Includes/header.php';
                             <hr class="seperator">
                             <h6 class="project-item-header">Software/Technology used</h6>
                             <ul>
+                                <li class="project-list-item"><i class="fab fa-bootstrap"></i></i> Bootstrap</li>
                                 <li class="project-list-item"><i class="fas fa-server"></i> Apache2</li>
                                 <li class="project-list-item"><i class="fab fa-digital-ocean"></i> Digital Ocean</li>
                                 <li class="project-list-item"><i class="fas fa-file-code"></i> VSCode</li>
