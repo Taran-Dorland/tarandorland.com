@@ -54,7 +54,9 @@ include 'Includes/header.php';
                 <div class="col-sm-4 info-col">
                 <div class="row">
                         <div class="col-sm-12 text-left">
-                            <p class="project-info">A utility built to integrate with an existing system
+                            <p class="project-info">
+                                An ongoing group project for school with a local company.
+                                A utility built to integrate with an existing system
                                 by taking the exported data of the existing system and generating graphs,
                                 tables, and reports. 
                             </p>
