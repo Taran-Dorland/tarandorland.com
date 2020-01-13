@@ -19,12 +19,16 @@ include 'Includes/header.php';
       <main role="main" class="inner cover">
         <div class="inner text-left">
           <div class="text-left text-nowrap">
-            <p class="date-text">28-12-2019</p>
+            <p class="date-text">13-01-2020</p>
             <h2 class="cover-heading">About</h2>
           </div>
           <hr class="seperator">
-          <p class="lead">I am a software <a href="https://www.youtube.com/watch?v=KMU0tzLwhbE" target="_blank">developer</a> who is open to all kinds of opportunities. Factorio and Rimworld are
-            my current favourite games. I have seen the light and now use Linux as my everyday OS, specifically Manjaro.
+          <p class="lead">I am a software 
+            <a href="https://www.youtube.com/watch?v=KMU0tzLwhbE" target="_blank">developer</a>
+            who is open to all kinds of opportunities.
+            My hobbies include video games, movies, TV shows,
+            model trains, and of course writing software.
+            Linux is my current favourite OS, more specifically the Manjaro distro.
           </p>
           <hr class="seperator">
           <h2 class="cover-heading">Contact</h2>
