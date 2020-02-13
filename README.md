@@ -3,3 +3,5 @@
 
 
 My personal website to display information about myself, personal projects, and school work.
+
+Built using PHP/JQuery/Bootstrap and running on a LAMP server.
