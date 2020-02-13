@@ -1,4 +1,10 @@
 {
+  "name": "tarandorland.com",
+  "version": "1.0",
+  "description": "My personal website to display information about myself, personal projects, and school work.",
+  "scripts": {
+    "build": "yarn"
+  },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
