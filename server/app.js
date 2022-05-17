@@ -10,6 +10,17 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+app.get('/test', (req, res) => {
+
+    resObj = {
+        code: 200,
+        status: "OK",
+        description: "Express test was successful."
+    }
+
+    res.send(resObj)
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
