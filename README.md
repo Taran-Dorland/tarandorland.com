@@ -6,4 +6,4 @@ Personal website to host information / projects. Moving from PHP to React SPA.
 
 -   React
 -   Vite
--   Tailwind CSS
+-   Mantine
